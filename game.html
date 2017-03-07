@@ -8,7 +8,7 @@
     function game() {
     var answer;
     var randomNum = Math.random();
-    if (randomNum <= 0.8){
+    if (randomNum <= 0.83){
       answer = "You live.";
     }
     else {
@@ -45,6 +45,7 @@
 
     a{
       color: white;
+      font-family: sans-serif;
     }
 
     #container{
@@ -78,8 +79,30 @@
       font-family: sans-serif;
       font-size: 1em;
       text-decoration: none;
-      position: absolute;
+      position: relative;
       opacity: 0.6;
+    }
+
+    .tooltip {
+      color: white;
+      opacity: 0.6;
+      font-size: 1em;
+      font-family: sans-serif;
+      display: inline-block;
+      border-bottom: 1px dotted black;
+      padding-left: 2em;
+    }
+
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      color: white;
+      position: relative;
+      z-index: 1;
+      padding-left: 2em;
+    }
+
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
     }
 
 
@@ -90,11 +113,15 @@
   <div id="container">
     <div id="russ">
       <p id="title">Russian Roullette,</p>
-      <a href="#" id="button" onclick="game()">Do you feel lucky, Punk?</a>
+      <a href="#" id="button" onclick="game()">Do I feel lucky? Well, do ya, punk</a>
       <p id="result"></p>
       <a id="reset" href="#" onclick="refresh()"></a>
     </div>
       <br><a id="return" href="index.html">Return to index</a>
+
+  <div class="tooltip">Instructions
+    <span class="tooltiptext">Click on "Do I feel lucky?" and find out.</span>
+  </div>
   </div>
 
 </body>
