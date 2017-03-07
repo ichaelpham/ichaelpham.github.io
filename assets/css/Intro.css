@@ -1,0 +1,62 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 36px;
+  line-height: normal;
+  background-color: #fff4a3;
+}
+
+a{
+  color: black;
+  font-family: Arial;
+  text-decoration: underline;
+}
+
+a:hover{
+  font-style: oblique;
+}
+
+.zone {
+  display: inline-block;
+  width: 50vw;
+  height: auto;
+  padding-top: 2.5vh;
+  padding-left: 2.5vw;
+}
+
+.zone p{
+  text-indent: 2vw;
+}
+
+#intro {
+  display: inline;
+  font-family: Times, Big Caslon, serif;
+}
+.links {
+  display: inline;
+  width: auto;
+  height: auto;
+}
+
+.links p {
+  display: inline;
+}
+
+#git {
+  position: absolute;
+  font-size: 16px;
+  bottom: 2.5vh;
+  right: 2.5vw;
+}
+
+#git p{
+  display: inline;
+}
+
+#git a{
+  display: inline;
+}
