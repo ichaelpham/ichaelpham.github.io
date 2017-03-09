@@ -37,7 +37,7 @@ body {
 
 .body {
    font-size: 1.15em;
-   text-indent: 3em;
+   text-indent: -1.5em;
    font-family: Times, Big Caslon, serif;
 }
 
@@ -52,7 +52,7 @@ body {
    font-weight: bold;
    font-size: 1.15em;
    font-family: arial, sans-serif;
-   text-indent: 3em;
+   text-indent: -1.5em;
 }
 
 .quote + .body {
