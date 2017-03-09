@@ -46,6 +46,10 @@ a:hover{
   display: inline;
 }
 
+.miscLinks{
+   font-family: monospace;
+}
+
 #git {
   position: absolute;
   font-size: 16px;
