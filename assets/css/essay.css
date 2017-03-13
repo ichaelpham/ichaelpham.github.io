@@ -4,12 +4,15 @@
 }
 
 body {
-   background-color: #F04848;
+   background-color: #F3E3CD;
+   color: black;
 }
 
 .wrapper {
    width: 30em;
-   padding: 3.5em 0em 0em 4.5em;
+   padding: 3.5em 0em 0em 0em;
+   position: absolute;
+   right: 4.5em;
 }
 
 #author {
@@ -20,10 +23,12 @@ body {
    font-size: 1.15em;
    font-family: arial, sans-serif;
    font-weight: bold;
+   color: #11AEBF;
 }
 
 .title {
    text-decoration: underline;
+   color: #11AEBF;
 }
 
 #author + .body {
@@ -43,9 +48,9 @@ body {
 
 .quote {
    font-size: 1.15em;
-   padding: 1em 0em 1em 3em;
+   padding: 1em 0em 2em 3em;
    font-style: italic;
-   text-align: right;
+   text-align: left;
 }
 
 .sub {
@@ -53,7 +58,8 @@ body {
    font-weight: bold;
    font-size: 1.15em;
    font-family: arial, sans-serif;
-   text-indent: -1.5em;
+   text-indent: 1.5em;
+   color: #11AEBF;
 }
 
 .quote + .body {
@@ -71,10 +77,10 @@ ul {
    padding-top: 1em;
    margin-left: 0em;
    padding-left: 0em;
+   padding-bottom: 2em;
 }
 
 ul li {
-   list-style-type: square;
    margin-left: 3em;
    padding: 0;
    font-size: 1.15em;

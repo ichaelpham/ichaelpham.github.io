@@ -13,7 +13,8 @@ body {
 a{
   color: black;
   font-family: Arial;
-  text-decoration: underline;
+  text-decoration: none;
+  border-bottom: 2.85px solid black;
 }
 
 a:hover{
@@ -26,10 +27,7 @@ a:hover{
   height: auto;
   padding-top: 2.5vh;
   padding-left: 2.5vw;
-}
-
-.zone p{
-  text-indent: 2vw;
+  text-indent: 5vw;
 }
 
 #intro {
@@ -46,8 +44,20 @@ a:hover{
   display: inline;
 }
 
+.links a {
+  line-height: 1.25em;
+}
+
 .miscLinks{
-   font-family: arial, sans-serif;
+   font-family: Arial, sans-serif;
+   border-bottom: 3px dotted black;
+}
+
+.liNum {
+   font-weight: 100;
+   font-family: Times, Big Caslon, serif;
+   font-size: 18px;
+
 }
 
 #git {
