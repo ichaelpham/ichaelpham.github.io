@@ -1,24 +1,3 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Level 3c</title>
-		<style>
-			.border{
-				border: 1px solid black;
-				padding: 20px;
-			}
-		</style>
-	</head>
-	<body>
-		<div class="border">
-			  <div class="border">
-					<div class="border">
-						 <div class="border">
-
-						 </div>
-					</div>
-			  </div>
-		 </div>
 	THE PESTO MANIFESTO Peter Nowogrodzki
 	This is the  pesto manifesto;
 	an improvised recipe of sorts.
@@ -42,7 +21,7 @@
 	2. Don’t covert production
 	and experimentation recipe.
 	3. Always leave the edges rough,
-	so that  someone can cut thstrongselves.
+	so that  someone can cut themselves.
 	4. A photoshop’d joke
 	is deep and meaningful.
 	5. Take the knife to cultural icons and produce:
@@ -51,9 +30,3 @@
 	pun and play, annihilate and resurrect meaning.
 	Keep in mind:
 	pesto is delicious when it’s made fresh.
-
-  	<a href="index.html">Return to index</a>
-		</div>
-
-	</body>
-</html>

@@ -1,0 +1,13 @@
+#wrapper{
+   display: inline-block;
+}
+
+div{
+   display: inline-block;
+   float: left;
+   padding-left: 10px;
+}
+
+span{
+   padding-left: 10px;
+}

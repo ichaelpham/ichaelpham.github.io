@@ -1,0 +1,70 @@
+  *{
+    margin: 0px;
+    padding: 0px;
+  }
+
+  body{
+    background-color: black;
+  }
+
+  a{
+    color: white;
+    font-family: sans-serif;
+  }
+
+  #container{
+    padding-left: 5em;
+    position: fixed;
+    padding-top: 13.5em;
+  }
+
+  #button{
+    display: block;
+  }
+
+  #result{
+    display: inline;
+  }
+
+  #reset{
+    padding-left: 0.5em;
+  }
+
+  #russ{
+    height: 11.5em;
+    display: block;
+    color: white;
+    font-size: 2em;
+    font-family: sans-serif;
+  }
+
+  #return{
+    color: white;
+    font-family: sans-serif;
+    font-size: 1em;
+    text-decoration: none;
+    position: relative;
+    opacity: 0.6;
+  }
+
+  .tooltip {
+    color: white;
+    opacity: 0.6;
+    font-size: 1em;
+    font-family: sans-serif;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    padding-left: 2em;
+  }
+
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    color: white;
+    position: relative;
+    z-index: 1;
+    padding-left: 2em;
+  }
+
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }

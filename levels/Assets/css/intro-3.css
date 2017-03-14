@@ -1,0 +1,63 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: times, serif;
+  font-size: 1.25em;
+  line-height: normal;
+  background-color: #fff4a3;
+}
+
+a{
+  color: black;
+  font-family: Arial;
+  text-decoration: none;
+  border-bottom: 2.85px solid black;
+}
+
+a:hover{
+  font-style: oblique;
+}
+
+#container {
+   padding: 2.5em 0em 7.5em 3.5em;
+}
+
+#header {
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  border-bottom: 0.1em dotted black;
+  padding-left: 0em;
+}
+
+.zone {
+  display: inline-block;
+  width: 32.5vw;
+  height: auto;
+  line-height: 1.25em;
+}
+
+.zone p {
+   padding: 1em 0em 0em 1em;
+}
+
+.zone ol{
+   padding: 1em 0em 0em 0em;
+}
+
+#git {
+  position: fixed;
+  font-size: 1em;
+  bottom: 2.5vh;
+  right: 2.5vw;
+}
+
+#git p{
+  display: inline;
+}
+
+#git a{
+  display: inline;
+}

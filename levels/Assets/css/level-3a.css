@@ -1,0 +1,10 @@
+   #wrapper{
+      display: inline-block;
+   }
+
+   div{
+      display: inline-block;
+      padding-left: 50px;
+      width: 500px;
+      border: 1px solid black;
+   }

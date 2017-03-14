@@ -1,0 +1,16 @@
+			.wrapper{
+				width: 500px;
+				line-height: 30px;
+				letter-spacing: 1px;
+				text-transform: capitalize;
+				font-style: italic;
+			}
+
+			.text-align{
+				text-align: center;
+			}
+
+			.position{
+				position: fixed;
+				font-weight: bold;
+			}
