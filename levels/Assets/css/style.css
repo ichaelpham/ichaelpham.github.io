@@ -2,3 +2,34 @@ body {
   font-size: 20px;
   line-height: normal;
 }
+
+.bottomMenu {
+   display: inline-block;
+   position: fixed;
+   height: 7vh;
+   width: 100%;
+   bottom: 0em;
+   left: 0em;
+}
+
+.bottomMenu a {
+   position: absolute;
+   vertical-align: middle;
+   line-height: 7vh;
+}
+
+#prev {
+   left: 2.5em;
+}
+
+#lvlHome {
+   margin-left: auto;
+   margin-right: auto;
+   left: 0;
+   right: 0;
+   text-align: center;
+}
+
+#next {
+   right: 2.5em;
+}
