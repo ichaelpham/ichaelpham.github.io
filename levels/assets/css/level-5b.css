@@ -1,18 +1,30 @@
-.wrapper{
-	width: 500px;
-	line-height: 30px;
-	letter-spacing: 1px;
-	text-transform: capitalize;
-	font-style: italic;
+* {
+   padding: 0px;
+   margin: 0px;
 }
 
-.text-align{
-	text-align: center;
+body {
+   font-family: 'Roboto';
+   background-color: #08BCCC;
+   color: white;
+
 }
 
-.position{
-	position: fixed;
-	font-weight: bold;
+#move {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background-color: white;
+
+}
+
+.body-text {
+   width: 96.5%;
+   padding: 20px 0px 0px 20px;
+   font-family: 'Roboto Mono';
+   text-transform: uppercase;
+   font-size: 40px;
+   text-align: justify;
 }
 
 .lvl {
@@ -37,7 +49,6 @@
    line-height: 65px;
    font-size: 22px;
    font-family: Arial, sans-serif;
-	font-style: normal;
    text-decoration: none;
 }
 
@@ -75,7 +86,6 @@
 
 .btm-menu a {
    text-decoration: none;
-	font-style: normal;
 }
 
 .btm-menu a:hover {

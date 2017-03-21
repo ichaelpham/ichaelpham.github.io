@@ -5,28 +5,9 @@
 
 body {
   font-family: times, serif;
-  font-size: 1.25em;
+  font-size: 20px;
   line-height: normal;
-  background-color: #fff4a3;
 }
-
-/*
-#topMenu {
-   position: fixed;
-   left: 2.5em;
-   top: 2em;
-   width: 1.25em;
-   height: 1.25em;
-   border-radius: 50%;
-   border: 0px solid black;
-   background-color: black;
-   transition: all 1s ease;
-}
-
-#topMenu:hover {
-   opacity: 0.65;
-}
-*/
 
 #container {
    padding: 0em;
@@ -37,44 +18,36 @@ body {
   display: inline-block;
   font-family: Arial, sans-serif;
   padding-top: 0em;
-}
-
-.zone p:nth-child(2) {
-   padding-top: 0em;
+  font-weight: 600;
 }
 
 .zone {
   display: inline-block;
-  width: 32.5vw;
+  width: 40%;
   height: auto;
-  line-height: 1.25em;
-  padding: 5em 5em 7.5em 5em;
+  font-size: 20px;
+  padding: 40px 0em 80px 220px;
 }
 
 .zone p {
-   padding: 1em 0em 0em 1em;
+   padding: 20px 40px 0em 0px;
 }
 
 .zone ol {
-   padding: 1em 0em 0em 0em;
-}
-
-#git {
-  position: fixed;
-  font-size: 1em;
-  bottom: 2.5vh;
-  right: 2.5vw;
+   padding: 20px 40px 0em 80px;
 }
 
 .lvl {
+   position: absolute;
+   right: 80px;
+   top: 40px;
    display: inline-block;
    width: auto;
    vertical-align: top;
-   padding-top: 5em;
 }
 
 .windows {
-   margin: 0em 2.5em 2.5em 0em;
+   margin: 0em 0em 5em 4.5em;
    width: 65px;
    height: 65px;
    display: inline-block;
@@ -90,4 +63,53 @@ body {
 
 .windows:hover {
    background:transparent url("../images/windows-02.svg") center top no-repeat;
+}
+
+.top-menu {
+   position: fixed;
+   top: 40px;
+   left: 80px;
+}
+
+.top-menu a {
+   text-decoration: none;
+   font-weight: bold;
+   font-family: Arial, sans-serif;
+   border-bottom: 2px dotted black;
+   color: #2314D1;
+   font-size: 22px;
+}
+
+.top-menu a:hover {
+   font-style: oblique;
+} 
+
+.btm-menu {
+   position: fixed;
+   bottom: 0px;
+   width: 100%;
+   height: 4.5em;
+   display: block;
+   left: 0px;
+}
+
+.btm-menu a {
+   text-decoration: none;
+}
+
+.prev {
+   left: 80px;
+   bottom: 60px;
+   position: absolute;
+   font-size: 1.25em;
+   font-family: Arial, sans-serif;
+   width: auto;
+}
+
+.next {
+   right: 80px;
+   bottom: 60px;
+   position: absolute;
+   width: 50px;
+   font-size: 1.5em;
 }

@@ -5,36 +5,43 @@
 
 body {
   font-family: Arial, sans-serif;
-  font-size: 36px;
-  line-height: normal;
-  background-color: #fff4a3;
+  background-color: #CCFFCE;
 }
 
-a{
-  color: black;
-  font-family: Arial;
-  text-decoration: none;
-  border-bottom: 2.85px solid black;
+.top-menu {
+   position: fixed;
+   top: 40px;
+   left: 80px;
 }
 
-a:hover{
-  font-style: oblique;
+.top-menu a {
+   text-decoration: none;
+   font-weight: bold;
+   font-family: Arial, sans-serif;
+   border-bottom: 2px dotted black;
+   color: #3D9975;
+   font-size: 22px;
+   vertical-align: top;
 }
 
 .zone {
-  display: inline-block;
-  width: 50vw;
-  height: auto;
-  padding-top: 2.5vh;
-  padding-left: 2.5vw;
-  text-indent: 5vw;
+   position: absolute;
+   font-size: 40px;
+   display: inline-block;
+   width: 40%;
+   height: auto;
+   bottom: 160px;
+   left: 80px;
 }
 
 #intro {
-  display: inline;
-  font-family: Times, Big Caslon, serif;
+   display: inline;
+   font-family: Times, Big Caslon, serif;
 }
+
 .links {
+   text-indent: 0px;
+   position: relative;
   display: inline;
   width: auto;
   height: auto;
@@ -44,8 +51,31 @@ a:hover{
   display: inline;
 }
 
-.links a {
+.links a{
+  color: black;
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+  border-bottom: 2.85px solid black;
   line-height: 1.25em;
+}
+
+#fifteen {
+   display: inline-block;
+   width: 325px;
+}
+
+#essay {
+   display: inline-block;
+   width: 140px;
+}
+
+#game {
+   display: inline-block;
+   width: 100px;
+}
+
+a:hover{
+  font-style: oblique;
 }
 
 .miscLinks{
@@ -57,20 +87,4 @@ a:hover{
    font-weight: 100;
    font-family: Times, Big Caslon, serif;
    font-size: 18px;
-
-}
-
-#git {
-  position: absolute;
-  font-size: 16px;
-  bottom: 2.5vh;
-  right: 2.5vw;
-}
-
-#git p{
-  display: inline;
-}
-
-#git a{
-  display: inline;
 }

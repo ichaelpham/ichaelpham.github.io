@@ -8,12 +8,33 @@
   }
 
   a{
-    color: white;
+    color: #F3E5D0;
     font-family: sans-serif;
+    border-bottom: 1px solid white;
+    text-decoration: none;
+  }
+
+  .top-menu {
+     position: fixed;
+     top: 40px;
+     left: 80px;
+  }
+
+  .top-menu a {
+     text-decoration: none;
+     font-weight: bold;
+     font-family: Arial, sans-serif;
+     border-bottom: 2px dotted white;
+     color: #F3E5D0;
+     font-size: 22px;
+  }
+
+  .top-menu a:hover {
+     font-style: oblique;
   }
 
   #container{
-    padding-left: 5em;
+    padding-left: 80px;;
     position: fixed;
     padding-top: 13.5em;
   }
@@ -24,47 +45,31 @@
 
   #result{
     display: inline;
+    border-bottom: none;
   }
 
   #reset{
-    padding-left: 0.5em;
+    margin-left: 0.5em;
   }
 
   #russ{
     height: 11.5em;
     display: block;
-    color: white;
+    color: #F3E5D0;
     font-size: 2em;
     font-family: sans-serif;
   }
 
-  #return{
-    color: white;
-    font-family: sans-serif;
-    font-size: 1em;
-    text-decoration: none;
-    position: relative;
-    opacity: 0.6;
-  }
-
   .tooltip {
-    color: white;
-    opacity: 0.6;
+    color: #F3E5D0;
     font-size: 1em;
     font-family: sans-serif;
     display: inline-block;
-    border-bottom: 1px dotted black;
-    padding-left: 2em;
-  }
-
-  .tooltip .tooltiptext {
-    visibility: hidden;
-    color: white;
     position: relative;
     z-index: 1;
-    padding-left: 2em;
   }
 
-  .tooltip:hover .tooltiptext {
-    visibility: visible;
-  }
+  .tooltip span {
+     border-bottom: 1px dotted white;
+     margin-right: 80px;
+ }

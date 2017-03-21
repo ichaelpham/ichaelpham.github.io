@@ -21,5 +21,5 @@ function refresh() {
   document.getElementById("reset").innerHTML = "";
   document.getElementById("button").style.pointerEvents = "auto";
   document.getElementById("title").style.textDecoration = "none";
-  document.getElementById("button").style.textDecoration = "underline";
+  document.getElementById("button").style.textDecoration = "none";
 };

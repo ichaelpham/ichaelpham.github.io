@@ -8,11 +8,41 @@ body {
    color: black;
 }
 
+.top-menu {
+   position: fixed;
+   top: 40px;
+   left: 80px;
+}
+
+.top-menu a {
+   text-decoration: none;
+   font-weight: bold;
+   font-family: Arial, sans-serif;
+   border-bottom: 2px dotted black;
+   font-size: 22px;
+   vertical-align: top;
+   color: #F3E3CD;
+   text-shadow:
+   -1px -1px 0 #11AEBF,
+    1px -1px 0 #11AEBF,
+    -1px 1px 0 #11AEBF,
+     1px 1px 0 #11AEBF;
+}
+
+.top-menu a:hover {
+   font-style: oblique;
+}
+
 .wrapper {
-   width: 30em;
-   padding: 3.5em 0em 0em 0em;
-   position: absolute;
-   right: 4.5em;
+   width: 1000px;
+   padding: 120px 0em 120px 80px;
+   -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    -webkit-column-gap: 120px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 120px; /* Firefox */
+    column-gap: 120px;
+    column-width: 40px;
 }
 
 #author {
@@ -36,7 +66,7 @@ body {
 }
 
 .sub + .body {
-   text-indent: 0em;
+   text-indent: 1.5em;
    padding-top: 0.15em;
 }
 
@@ -48,7 +78,7 @@ body {
 
 .quote {
    font-size: 1.15em;
-   padding: 1em 0em 2em 3em;
+   padding: 1em 0em 2em 1.5em;
    font-style: italic;
    text-align: left;
 }
@@ -63,7 +93,7 @@ body {
 }
 
 .quote + .body {
-   text-indent: 0em;
+   text-indent: 1.5em;
 }
 
 #liIntro {
@@ -85,6 +115,7 @@ ul li {
    padding: 0;
    font-size: 1.15em;
    list-style-position: outside;
+   list-style: square;
 }
 
 #return {

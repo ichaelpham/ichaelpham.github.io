@@ -1,18 +1,68 @@
-.wrapper{
-	width: 500px;
-	line-height: 30px;
-	letter-spacing: 1px;
-	text-transform: capitalize;
-	font-style: italic;
+* {
+   padding: 0px;
+   margin: 0px;
 }
 
-.text-align{
-	text-align: center;
+body {
+   z-index: 1;
+   font-size: 20px;
 }
 
-.position{
-	position: fixed;
-	font-weight: bold;
+
+#wrapper{
+   padding-top: 40px;
+   padding-bottom: 180px;
+}
+
+.bg-group {
+   position: fixed;
+   display: inline-block;
+   font-size: 60px;
+   color: #4332FF;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+   top: 100px;
+}
+
+.bg-group-inner {
+   display: inline-block;
+   width: 200%;
+   height: 100%;
+}
+
+.bg {
+   display: inline-block;
+}
+
+.text {
+   padding: 0px 0px 0px 260px;
+   color: black;
+   width: 500px;
+}
+
+.text p {
+   padding-bottom: 80px;
+}
+
+.list {
+   list-style: none;
+   padding-left: 120px;
+   padding-bottom: 80px;
+}
+
+.list:nth-child(1) {
+   list-style: none;
+   padding-left: 0px;
+   padding-bottom: 80px;
+}
+
+.list li:nth-child(-n+3) {
+   padding-left: 40px;
+}
+
+.text:nth-child(odd) {
+   padding: 0px 0px 0px 600px;
 }
 
 .lvl {
@@ -37,7 +87,6 @@
    line-height: 65px;
    font-size: 22px;
    font-family: Arial, sans-serif;
-	font-style: normal;
    text-decoration: none;
 }
 
@@ -62,7 +111,7 @@
 
 .top-menu a:hover {
    font-style: oblique;
-} 
+}
 
 .btm-menu {
    position: fixed;
@@ -75,7 +124,6 @@
 
 .btm-menu a {
    text-decoration: none;
-	font-style: normal;
 }
 
 .btm-menu a:hover {
