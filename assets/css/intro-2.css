@@ -74,6 +74,11 @@ body {
    width: 100px;
 }
 
+#remix {
+   display: inline-block;
+   width: 120px;
+}
+
 a:hover{
   font-style: oblique;
 }
