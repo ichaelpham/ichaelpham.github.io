@@ -28,7 +28,7 @@ body {
    position: absolute;
    font-size: 40px;
    display: inline-block;
-   width: 40%;
+   max-width: 500px;
    height: auto;
    bottom: 160px;
    left: 80px;

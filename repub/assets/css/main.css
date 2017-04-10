@@ -1,0 +1,127 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: arial;
+  font-size: 22px;
+  line-height: normal;
+  background: #2A3A58;
+  color: white;
+}
+
+a {
+  color: white;
+  font-size: 22px;
+  font-family: arial;
+}
+
+img {
+  width: 600px;
+}
+
+.repub-menu {
+   margin: 120px 0px 0px 80px;
+   font-size: 1.75em;
+   width: auto;
+   font-family: Arial;
+}
+
+.repub-menu p {
+   display: inline;
+   font-size: 30px;
+}
+
+.repub-menu a {
+   text-decoration: none;
+   color: #BFBFBF;
+   font-size: 30px;
+}
+
+.repub-menu a:hover {
+   border-bottom: 2px dotted white;
+}
+
+.essay {
+  font-family: arial;
+  width: 1000px;
+  margin: 120px 0px 120px 80px;
+  column-count: 2;
+  column-gap: 40px;
+}
+
+.essay h1 {
+   font-family: 'Eczar', Arial;
+   font-weight: 500;
+   font-size: 24px;
+   line-height: 1em;
+   padding-bottom: 26px;
+}
+
+.essay p {
+  text-indent: 40px;
+}
+
+.essay p:nth-child(2) {
+   text-indent: 0px;
+}
+
+.essay a {
+  padding-top: 2em;
+  display: inline-block;
+}
+
+.ideas {
+   font-family: arial;
+   width: 500px;
+   margin: 120px 0px 120px 80px;
+}
+
+.ideas p {
+   font-family: Arial;
+   font-size: 22px;
+   font-weight: 400;
+   padding-top: 20px;
+}
+
+.ideas a {
+   display: inline-block;
+   padding-top: 2em;
+}
+
+.frame-wrap {
+   width: 6400px;
+   height: 384px;
+   padding: 0;
+   overflow: hidden;
+}
+
+.frame {
+   width: 1280px;
+   height: 786px;
+   border: 0;
+
+   -ms-transform: scale(0.5);
+   -moz-transform: scale(0.5);
+   -o-transform: scale(0.5);
+   -webkit-transform: scale(0.5);
+   transform: scale(0.5);
+
+   -ms-transform-origin: 0 0;
+   -moz-transform-origin: 0 0;
+   -o-transform-origin: 0 0;
+   -webkit-transform-origin: 0 0;
+   transform-origin: 0 0;
+}
+
+.slide-con {
+   margin-top: 40px;
+   width: 800px;
+   height: auto;
+}
+
+.slide-con img {
+   width: 100%;
+   height: auto;
+}
