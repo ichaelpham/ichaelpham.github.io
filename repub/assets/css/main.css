@@ -22,10 +22,13 @@ img {
 }
 
 .marquee {
-   margin: 40px 0px 0px 160px;
    width: 800px;
    overflow: hidden;
+   position: fixed;
+   left: 160px;
+   top: 40px;
 }
+
 .marquee span {
    padding-right: 44px;
 }
@@ -33,6 +36,11 @@ img {
 .marquee a {
    border-bottom: 2px dotted white;
    text-decoration: none;
+   margin-left: 11px;
+}
+
+.marquee a:hover {
+   color: #F35545;
 }
 
 .essay {

@@ -7,12 +7,9 @@ var $marquee = $('.marquee');
 
 $marquee.marquee({
     duration: 7500,
-    gap: 120,
-    //time in milliseconds before the marquee will start animating
+    gap: 0,
     delayBeforeStart: 0,
-    //'left' or 'right'
     direction: 'left',
-    //true or false - should the marquee be duplicated to show an effect of continues flow
     duplicated: true
 });
 });
