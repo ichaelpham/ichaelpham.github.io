@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700');
+
+body {
+   color: black;
+   font-family: 'lora', Times, serif;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 26px;
+}
+
+a {
+   text-decoration: none;
+   color: black;
+}
+
+/* menu */
+#menu_text a {
+   font-weight: bold;
+   font-family: arial, helvetica, sans-serif;
+}
+
+#top_menu {
+   font-family: arial, helvetica, sans-serif;
+}
+
+.info_text p {
+   display: block;
+   margin: 125px auto 0 40px;
+   width: 40%;
+}
+
+.info_text p:nth-child(2) {
+   margin: 1em auto 0 40px;
+}
+
+.suggest {
+   border-bottom: 1px dotted black;
+}
+
+.suggest:hover{
+   border-bottom: 1px solid black;
+}
+
+
+/* footnotes */
+.footnote {
+   font-family: Arial, helvetica,  sans-serif;
+   margin: 1em 0 0 40px;
+   display:none;
+}
+
+.footnote.show_foot {
+   display:block;
+}
+
+.f0 {
+   display:block;
+}
+
+.f0.hide_foot {
+   display:none;
+}
+
+/* homepage my name */
+.author {
+   position: fixed;
+   right: 40px;
+   bottom: 25px;
+   z-index: 2;
+   transform: rotate(90deg);
+   transform-origin: right;
+   font-family: Arial, helvetica, sans-serif;
+}
+
+/* text pages */
+.body_con {
+   width: 55%;
+   margin: 125px auto 0 40px;
+   padding-bottom: 160px;
+}
+
+.body_con p {
+   padding-bottom: 1em;
+   width: 72.5%;
+}
+
+.body_con p:last-child {
+   padding-top: 1em;
+}
+
+.body_con a {
+   border-bottom: 1px dotted black;
+}
+
+.body_con sup {
+   vertical-align: baseline;
+   position: relative;
+   top: -0.4em;
+   font-size: 12px;
+}
+
+.body_con span:hover a {
+   border-bottom: 1px solid black;
+}
+
+.body_con span:hover sup {
+   color: rgb(100, 100, 100);
+   cursor: pointer;
+   border-bottom: none;
+}
+
+.no_ref a {
+   pointer-events: none;
+}
+
+.quote {
+   padding-left: 3em;
+   font-weight: bold;
+}
+
+.cap {
+   padding-top: 1em;
+   font-style: italic;
+}

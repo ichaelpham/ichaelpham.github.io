@@ -1,0 +1,149 @@
+* {
+   padding: 0px;
+   margin: 0px;
+}
+
+body {
+   z-index: 1;
+   font-size: 20px;
+}
+
+
+#wrapper{
+   padding-top: 40px;
+   padding-bottom: 180px;
+}
+
+.bg-group {
+   position: fixed;
+   display: inline-block;
+   font-size: 60px;
+   color: #4332FF;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+   top: 100px;
+}
+
+.bg-group-inner {
+   display: inline-block;
+   width: 200%;
+   height: 100%;
+}
+
+.bg {
+   display: inline-block;
+}
+
+.text {
+   padding: 0px 0px 0px 260px;
+   color: black;
+   width: 500px;
+}
+
+.text p {
+   padding-bottom: 80px;
+}
+
+.list {
+   list-style: none;
+   padding-left: 120px;
+   padding-bottom: 80px;
+}
+
+.list:nth-child(1) {
+   list-style: none;
+   padding-left: 0px;
+   padding-bottom: 80px;
+}
+
+.list li:nth-child(-n+3) {
+   padding-left: 40px;
+}
+
+.text:nth-child(odd) {
+   padding: 0px 0px 0px 600px;
+}
+
+.lvl {
+   position: fixed;
+   right: 80px;
+   top: 40px;
+   display: inline-block;
+   width: auto;
+   vertical-align: top;
+}
+
+.windows {
+   margin: 0em 0em 2.5em 2.5em;
+   width: 65px;
+   height: 65px;
+   display: inline-block;
+   position: relative;
+   background:transparent url("../images/windows-01.svg") center top no-repeat;
+   color: black;
+   text-align: center;
+   vertical-align: middle;
+   line-height: 65px;
+   font-size: 22px;
+   font-family: Arial, sans-serif;
+   text-decoration: none;
+}
+
+.windows:hover {
+   background:transparent url("../images/windows-02.svg") center top no-repeat;
+}
+
+.top-menu {
+   position: fixed;
+   top: 40px;
+   left: 80px;
+}
+
+.top-menu a {
+   text-decoration: none;
+   font-weight: bold;
+   font-family: Arial, sans-serif;
+   border-bottom: 2px dotted black;
+   color: #2314D1;
+   font-size: 22px;
+}
+
+.top-menu a:hover {
+   font-style: oblique;
+}
+
+.btm-menu {
+   position: fixed;
+   bottom: 0px;
+   width: 100%;
+   height: 4.5em;
+   display: block;
+   left: 0px;
+}
+
+.btm-menu a {
+   text-decoration: none;
+}
+
+.btm-menu a:hover {
+   font-style: oblique;
+}
+
+.prev {
+   left: 80px;
+   bottom: 60px;
+   position: absolute;
+   font-size: 22px;
+   font-family: Arial, sans-serif;
+   color: #2314D1;
+   text-decoration: underline;
+   width: auto;
+}
+
+.next {
+   right: 80px;
+   bottom: 60px;
+   position: absolute;
+   width: 50px;
+}
