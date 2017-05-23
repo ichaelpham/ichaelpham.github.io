@@ -122,3 +122,8 @@ a {
    padding-top: 1em;
    font-style: italic;
 }
+
+.sub_head {
+   padding-bottom: 0em !important;
+   font-weight: bold;
+}

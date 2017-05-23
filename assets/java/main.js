@@ -432,6 +432,42 @@ $(function () {
    }, function() {
       $('.f60').toggleClass('show_foot');
    });
+
+   $('.foot_61').hover(function() {
+      $('.f61').toggleClass('show_foot');
+   }, function() {
+      $('.f61').toggleClass('show_foot');
+   });
+
+   $('.foot_62').hover(function() {
+      $('.f62').toggleClass('show_foot');
+   }, function() {
+      $('.f62').toggleClass('show_foot');
+   });
+
+   $('.foot_63').hover(function() {
+      $('.f63').toggleClass('show_foot');
+   }, function() {
+      $('.f63').toggleClass('show_foot');
+   });
+
+   $('.foot_64').hover(function() {
+      $('.f64').toggleClass('show_foot');
+   }, function() {
+      $('.f64').toggleClass('show_foot');
+   });
+
+   $('.foot_65').hover(function() {
+      $('.f65').toggleClass('show_foot');
+   }, function() {
+      $('.f65').toggleClass('show_foot');
+   });
+
+   $('.foot_66').hover(function() {
+      $('.f66').toggleClass('show_foot');
+   }, function() {
+      $('.f66').toggleClass('show_foot');
+   });
 /* craft footnote */
 
 /* end of function */

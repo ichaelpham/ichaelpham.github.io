@@ -8,11 +8,6 @@
 
 body {
    background-color: rgb(250, 250, 250);
-   cursor: url('../images/ai/Untitled-1.png'), pointer;
-   cursor: -webkit-image-set(
-     url('../images/ai/Untitled-1.png') 1x,
-     url('../images/ai/Untitled-1.png') 2x
-   ), auto;
 }
 
 ::-moz-selection {
@@ -45,7 +40,8 @@ body {
    top: 30px;
    left: 40px;
    z-index: 10;
-   width: 40%;
+   width: 60%;
+   height: auto;
 }
 
 .info {
@@ -175,7 +171,7 @@ body {
    justify-content: space-around;
    margin: 1em auto 0 0;
    background-color: rgb(5, 5, 5);
-/* box-shadow: 1em 0 0 rgb(5, 5, 5); */
+   box-shadow: 1em 0 0 rgb(5, 5, 5);
 }
 
 .row img {
@@ -193,7 +189,13 @@ body {
 }
 
 .img_series img {
-   width: 175px;
+   width: 180px;
+   height: 100%;
+   align-self: flex-end;
+}
+
+.img_series_2 img {
+   width: 240px;
    height: 100%;
    align-self: flex-end;
 }
