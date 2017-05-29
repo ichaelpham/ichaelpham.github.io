@@ -50,7 +50,8 @@ a {
 }
 
 .footnote.show_foot {
-   display:block;
+   display: inline-block;
+   width: 80%;
 }
 
 .f0 {
@@ -126,4 +127,33 @@ a {
 .sub_head {
    padding-bottom: 0em !important;
    font-weight: bold;
+   font-family: arial, helvetica, sans-serif;
+}
+
+.ref {
+   font-weight: bold;
+   font-family: arial, helvetica, sans-serif;
+}
+
+.body_con ul {
+   list-style-position: inside;
+   width: 75%;
+   padding-bottom: 1em;
+}
+
+.body_con ul li {
+   list-style: none;
+}
+
+.body_con ul li span{
+   vertical-align: top;
+   display: inline-block;
+}
+
+.body_con ul li span:nth-child(1){
+   width: 7.5%;
+}
+
+.body_con ul li span:nth-child(2){
+   width: 91.5%;
 }

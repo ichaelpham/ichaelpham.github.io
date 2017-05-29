@@ -108,10 +108,10 @@ $(function () {
       $('.f6').toggleClass('show_foot');
    });
 
-   $('.foot_7').hover(function() {
-      $('.f7').toggleClass('show_foot');
+   $('.foot_9').hover(function() {
+      $('.f9').toggleClass('show_foot');
    }, function() {
-      $('.f7').toggleClass('show_foot');
+      $('.f9').toggleClass('show_foot');
    });
 
    $('.foot_8').hover(function() {
@@ -168,10 +168,10 @@ $(function () {
       $('.f16').toggleClass('show_foot');
    });
 /* auteur */
-   $('.foot_17').hover(function() {
-      $('.f17').toggleClass('show_foot');
+   $('.foot_19').hover(function() {
+      $('.f19').toggleClass('show_foot');
    }, function() {
-      $('.f17').toggleClass('show_foot');
+      $('.f19').toggleClass('show_foot');
    });
 
    $('.foot_18').hover(function() {
@@ -228,10 +228,10 @@ $(function () {
       $('.f26').toggleClass('show_foot');
    });
 
-   $('.foot_27').hover(function() {
-      $('.f27').toggleClass('show_foot');
+   $('.foot_29').hover(function() {
+      $('.f29').toggleClass('show_foot');
    }, function() {
-      $('.f27').toggleClass('show_foot');
+      $('.f29').toggleClass('show_foot');
    });
 
    $('.foot_28').hover(function() {
@@ -289,10 +289,10 @@ $(function () {
       $('.f36').toggleClass('show_foot');
    });
 
-   $('.foot_37').hover(function() {
-      $('.f37').toggleClass('show_foot');
+   $('.foot_39').hover(function() {
+      $('.f39').toggleClass('show_foot');
    }, function() {
-      $('.f37').toggleClass('show_foot');
+      $('.f39').toggleClass('show_foot');
    });
 
    $('.foot_38').hover(function() {
@@ -349,10 +349,10 @@ $(function () {
       $('.f46').toggleClass('show_foot');
    });
 
-   $('.foot_47').hover(function() {
-      $('.f47').toggleClass('show_foot');
+   $('.foot_49').hover(function() {
+      $('.f49').toggleClass('show_foot');
    }, function() {
-      $('.f47').toggleClass('show_foot');
+      $('.f49').toggleClass('show_foot');
    });
 
    $('.foot_48').hover(function() {
@@ -409,10 +409,10 @@ $(function () {
       $('.f56').toggleClass('show_foot');
    });
 
-   $('.foot_57').hover(function() {
-      $('.f57').toggleClass('show_foot');
+   $('.foot_59').hover(function() {
+      $('.f59').toggleClass('show_foot');
    }, function() {
-      $('.f57').toggleClass('show_foot');
+      $('.f59').toggleClass('show_foot');
    });
 
    $('.foot_58').hover(function() {
@@ -445,6 +445,7 @@ $(function () {
       $('.f62').toggleClass('show_foot');
    });
 
+/* craft footnote */
    $('.foot_63').hover(function() {
       $('.f63').toggleClass('show_foot');
    }, function() {
@@ -468,7 +469,227 @@ $(function () {
    }, function() {
       $('.f66').toggleClass('show_foot');
    });
-/* craft footnote */
 
+   $('.foot_67').hover(function() {
+      $('.f67').toggleClass('show_foot');
+   }, function() {
+      $('.f67').toggleClass('show_foot');
+   });
+
+   $('.foot_68').hover(function() {
+      $('.f68').toggleClass('show_foot');
+   }, function() {
+      $('.f68').toggleClass('show_foot');
+   });
+
+   $('.foot_69').hover(function() {
+      $('.f69').toggleClass('show_foot');
+   }, function() {
+      $('.f69').toggleClass('show_foot');
+   });
+
+   $('.foot_90').hover(function() {
+      $('.f70').toggleClass('show_foot');
+   }, function() {
+      $('.f70').toggleClass('show_foot');
+   });
+
+   $('.foot_71').hover(function() {
+      $('.f71').toggleClass('show_foot');
+   }, function() {
+      $('.f71').toggleClass('show_foot');
+   });
+
+   $('.foot_72').hover(function() {
+      $('.f72').toggleClass('show_foot');
+   }, function() {
+      $('.f72').toggleClass('show_foot');
+   });
+
+   $('.foot_73').hover(function() {
+      $('.f73').toggleClass('show_foot');
+   }, function() {
+      $('.f73').toggleClass('show_foot');
+   });
+
+   $('.foot_74').hover(function() {
+      $('.f74').toggleClass('show_foot');
+   }, function() {
+      $('.f74').toggleClass('show_foot');
+   });
+
+   $('.foot_75').hover(function() {
+      $('.f75').toggleClass('show_foot');
+   }, function() {
+      $('.f75').toggleClass('show_foot');
+   });
+
+   $('.foot_76').hover(function() {
+      $('.f76').toggleClass('show_foot');
+   }, function() {
+      $('.f76').toggleClass('show_foot');
+   });
+
+   $('.foot_77').hover(function() {
+      $('.f77').toggleClass('show_foot');
+   }, function() {
+      $('.f77').toggleClass('show_foot');
+   });
+
+   $('.foot_78').hover(function() {
+      $('.f78').toggleClass('show_foot');
+   }, function() {
+      $('.f78').toggleClass('show_foot');
+   });
+
+   $('.foot_79').hover(function() {
+      $('.f79').toggleClass('show_foot');
+   }, function() {
+      $('.f79').toggleClass('show_foot');p
+   });
+
+   $('.foot_80').hover(function() {
+      $('.f80').toggleClass('show_foot');
+   }, function() {
+      $('.f80').toggleClass('show_foot');
+   });
+
+   $('.foot_81').hover(function() {
+      $('.f81').toggleClass('show_foot');
+   }, function() {
+      $('.f81').toggleClass('show_foot');
+   });
+
+   $('.foot_82').hover(function() {
+      $('.f82').toggleClass('show_foot');
+   }, function() {
+      $('.f82').toggleClass('show_foot');
+   });
+
+   $('.foot_83').hover(function() {
+      $('.f83').toggleClass('show_foot');
+   }, function() {
+      $('.f83').toggleClass('show_foot');
+   });
+
+   $('.foot_84').hover(function() {
+      $('.f84').toggleClass('show_foot');
+   }, function() {
+      $('.f84').toggleClass('show_foot');
+   });
+
+   $('.foot_85').hover(function() {
+      $('.f85').toggleClass('show_foot');
+   }, function() {
+      $('.f85').toggleClass('show_foot');
+   });
+
+   $('.foot_86').hover(function() {
+      $('.f86').toggleClass('show_foot');
+   }, function() {
+      $('.f86').toggleClass('show_foot');
+   });
+
+   $('.foot_87').hover(function() {
+      $('.f87').toggleClass('show_foot');
+   }, function() {
+      $('.f87').toggleClass('show_foot');
+   });
+
+   $('.foot_88').hover(function() {
+      $('.f88').toggleClass('show_foot');
+   }, function() {
+      $('.f88').toggleClass('show_foot');
+   });
+
+   $('.foot_89').hover(function() {
+      $('.f89').toggleClass('show_foot');
+   }, function() {
+      $('.f89').toggleClass('show_foot');p
+   });
+
+   $('.foot_90').hover(function() {
+      $('.f90').toggleClass('show_foot');
+   }, function() {
+      $('.f90').toggleClass('show_foot');
+   });
+
+   $('.foot_91').hover(function() {
+      $('.f91').toggleClass('show_foot');
+   }, function() {
+      $('.f91').toggleClass('show_foot');
+   });
+
+   $('.foot_92').hover(function() {
+      $('.f92').toggleClass('show_foot');
+   }, function() {
+      $('.f92').toggleClass('show_foot');
+   });
+
+   $('.foot_93').hover(function() {
+      $('.f93').toggleClass('show_foot');
+   }, function() {
+      $('.f93').toggleClass('show_foot');
+   });
+
+   $('.foot_94').hover(function() {
+      $('.f94').toggleClass('show_foot');
+   }, function() {
+      $('.f94').toggleClass('show_foot');
+   });
+
+   $('.foot_95').hover(function() {
+      $('.f95').toggleClass('show_foot');
+   }, function() {
+      $('.f95').toggleClass('show_foot');
+   });
+
+   $('.foot_96').hover(function() {
+      $('.f96').toggleClass('show_foot');
+   }, function() {
+      $('.f96').toggleClass('show_foot');
+   });
+
+   $('.foot_97').hover(function() {
+      $('.f97').toggleClass('show_foot');
+   }, function() {
+      $('.f97').toggleClass('show_foot');
+   });
+
+   $('.foot_98').hover(function() {
+      $('.f98').toggleClass('show_foot');
+   }, function() {
+      $('.f98').toggleClass('show_foot');
+   });
+
+   $('.foot_99').hover(function() {
+      $('.f99').toggleClass('show_foot');
+   }, function() {
+      $('.f99').toggleClass('show_foot');p
+   });
+
+   $('.foot_100').hover(function() {
+      $('.f100').toggleClass('show_foot');
+   }, function() {
+      $('.f100').toggleClass('show_foot');
+   });
+
+   $('.foot_101').hover(function() {
+      $('.f101').toggleClass('show_foot');
+   }, function() {
+      $('.f101').toggleClass('show_foot');
+   });
+
+   $('.foot_102').hover(function() {
+      $('.f102').toggleClass('show_foot');
+   }, function() {
+      $('.f102').toggleClass('show_foot');
+   });
+
+   $('.foot_103').hover(function() {
+      $('.f103').toggleClass('show_foot');
+   }, function() {
+      $('.f103').toggleClass('show_foot');
+   });
 /* end of function */
 });
