@@ -71,6 +71,11 @@ a {
    transform: rotate(90deg);
    transform-origin: right;
    font-family: Arial, helvetica, sans-serif;
+   border-bottom: 1px dotted black;
+}
+
+.author:hover {
+   border-bottom: 1px solid black;
 }
 
 /* text pages */
