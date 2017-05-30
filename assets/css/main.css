@@ -255,6 +255,10 @@ body {
       padding: 1.5em;
       box-shadow: 0 0 0 rgb(200, 200, 200);
    }
+
+   .footnote {
+      margin: 1em 0 0 20px !important;
+   }
 }
 
 /* iphone 6 */
@@ -319,4 +323,5 @@ body {
       padding: 1.5em;
       box-shadow: 0 0 0 rgb(200, 200, 200);
    }
+
 }
