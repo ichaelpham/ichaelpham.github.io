@@ -91,10 +91,6 @@ a {
    width: 72.5%;
 }
 
-.body_con p:last-child {
-   padding-top: 1em;
-}
-
 .body_con a {
    border-bottom: 1px dotted black;
 }

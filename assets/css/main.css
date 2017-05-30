@@ -196,14 +196,18 @@ body {
 }
 
 /* media queries */
+
+/* narrow destop */
 @media (max-width: 750px) {
   .body_con {
      width: 79.5% !important;
-     margin: 145px auto 0 20px!important;
+     margin: 145px auto 0 20px !important;
+     border-right: 0 dashed black !important;
+     padding-bottom: 80px !important;
   }
 
   .body_con p {
-     width: 85% !important;
+     width: 100% !important;
   }
 
   .body_con ul {
@@ -219,7 +223,7 @@ body {
   }
 
   .quote {
-     padding-left: 1.5em !important;
+     padding-left: 1.5em !important;;
   }
 
   #top_menu {
@@ -249,6 +253,70 @@ body {
 
    .row {
       padding: 1.5em;
+      box-shadow: 0 0 0 rgb(200, 200, 200);
+   }
+}
+
+/* iphone 6 */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  .body_con {
+     width: 79.5% !important;
+     margin: 145px auto 0 20px !important;
+     border-right: 0 dashed black !important;
+     padding-bottom: 80px !important;
+  }
+
+  .body_con p {
+     width: 100% !important;
+  }
+
+  .body_con ul {
+     width: 100% !important;
+  }
+
+  .body_con ul li span:nth-child(1){
+     width: 7.5%;
+  }
+
+  .body_con ul li span:nth-child(2){
+     width: 80.5% !important;
+  }
+
+  .quote {
+     padding-left: 1.5em !important;;
+  }
+
+  #top_menu {
+     height: 110px;
+  }
+
+   #menu_text {
+       left: 20px;
+    }
+
+   .info {
+      right: 20px;
    }
 
+   .spectrum_text {
+      right: 20px;
+   }
+
+   .info_text p {
+      margin: 125px auto 0 20px !important;
+      width: 79.5% !important;
+   }
+
+   .info_text p:nth-child(2) {
+      margin: 1em auto 0 20px !important;
+   }
+
+   .row {
+      padding: 1.5em;
+      box-shadow: 0 0 0 rgb(200, 200, 200);
+   }
 }
