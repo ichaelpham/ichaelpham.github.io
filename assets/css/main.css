@@ -308,6 +308,7 @@ body {
 
    .info {
       right: 20px;
+      height: 100vh !important;
    }
 
    .spectrum_text {
@@ -317,7 +318,6 @@ body {
    .info_text p {
       margin: 300px auto 0 20px !important;
       width: 79.5% !important;
-      height: 100vh !important;
    }
 
    .info_text p:nth-child(2) {
