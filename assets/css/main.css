@@ -230,6 +230,7 @@ body {
 
    #menu_text {
        left: 20px;
+       width: 75%;
     }
 
    .info {
@@ -314,7 +315,7 @@ body {
       }
 
       .info_text p {
-         margin: 125px auto 0 20px !important;
+         margin: 300px auto 0 20px !important;
          width: 79.5% !important;
       }
 
