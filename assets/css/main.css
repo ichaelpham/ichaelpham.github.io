@@ -274,7 +274,7 @@ body {
      width: 85% !important;
      margin: 300px auto 0 20px !important;
      border-right: 0 dashed black !important;
-     padding-bottom: 80px !important;
+     padding-bottom: 120px !important;
   }
 
   .body_con p {
@@ -317,6 +317,7 @@ body {
    .info_text p {
       margin: 300px auto 0 20px !important;
       width: 79.5% !important;
+      height: 100vh !important;
    }
 
    .info_text p:nth-child(2) {
@@ -333,7 +334,6 @@ body {
       width: 50px;
       height: 50px;
    }
-
 
    .spectrum_home {
       width: 500px;
