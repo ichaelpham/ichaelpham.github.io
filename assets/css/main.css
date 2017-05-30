@@ -346,7 +346,7 @@ body {
    }
 
    .fold {
-      bottom: 80px !important;
+      height: 150px;
    }
 
    .cover_img {
