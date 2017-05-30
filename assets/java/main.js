@@ -691,5 +691,12 @@ $(function () {
    }, function() {
       $('.f103').toggleClass('show_foot');
    });
+
+   $('body').hover(function() {
+      $('.f103').toggleClass('show_foot');
+   }, function() {
+      $('.f103').toggleClass('show_foot');
+   });
+
 /* end of function */
 });

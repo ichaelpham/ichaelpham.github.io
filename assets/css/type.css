@@ -83,6 +83,7 @@ a {
    width: 55%;
    margin: 125px auto 0 40px;
    padding-bottom: 160px;
+   border-right: 1px dashed black;
 }
 
 .body_con p {
@@ -115,6 +116,30 @@ a {
    border-bottom: none;
 }
 
+.body_con ul {
+   list-style-position: inside;
+   width: 75%;
+   padding-bottom: 1em;
+}
+
+.body_con ul li {
+   list-style: none;
+}
+
+.body_con ul li span{
+   vertical-align: top;
+   display: inline-block;
+}
+
+.body_con ul li span:nth-child(1){
+   width: 7.5%;
+}
+
+.body_con ul li span:nth-child(2){
+   width: 91.5%;
+}
+
+
 .no_ref a {
    pointer-events: none;
 }
@@ -138,27 +163,4 @@ a {
 .ref {
    font-weight: bold;
    font-family: arial, helvetica, sans-serif;
-}
-
-.body_con ul {
-   list-style-position: inside;
-   width: 75%;
-   padding-bottom: 1em;
-}
-
-.body_con ul li {
-   list-style: none;
-}
-
-.body_con ul li span{
-   vertical-align: top;
-   display: inline-block;
-}
-
-.body_con ul li span:nth-child(1){
-   width: 7.5%;
-}
-
-.body_con ul li span:nth-child(2){
-   width: 91.5%;
 }
