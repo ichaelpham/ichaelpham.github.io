@@ -110,7 +110,7 @@
             ctx.strokeStyle = 'rgba(255,0,0,255)';
             ctx.lineWidth = size;
 
-            ctx.lineCap = 'butt';
+            ctx.lineCap = 'square';
             // REVIEW: could change this ^^^^^^
             // REVIEW: could change this ^^^^^^
             // REVIEW: could change this ^^^^^^
