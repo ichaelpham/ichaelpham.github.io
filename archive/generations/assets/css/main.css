@@ -1,0 +1,159 @@
+/*! normalize.css v6.0.0 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}/*# sourceMappingURL=normalize.min.css.map */
+
+@import url('https://fonts.googleapis.com/css?family=Karla');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+   font-family: 'Karla', sans-serif;
+   font-size: 16px;
+   text-transform: uppercase;
+   line-height: 1.5em;
+}
+
+.box {
+   text-decoration: none;
+   position: fixed;
+   bottom: 5vh;
+   z-index: 100;
+   color: #000;
+   display: inline-block;
+   border-bottom: 1px solid transparent;
+   transition: 0.5s ease;
+}
+
+.header {
+  text-decoration: none;
+  position: fixed;
+  top: 5vh;
+  z-index: 100;
+  color: #000;
+  display: inline-block;
+  border-bottom: 0px solid transparent;
+  transition: 0.5s ease;
+}
+
+#portrait {
+   display: none;
+}
+
+.box:hover, .header:hover {
+   border-bottom: 1px solid #282828;
+   color: #282828;
+}
+
+#home, #resetBtn, #info p {
+   left: 2.5vw;
+}
+
+#changeBtn {
+   left: 50%;
+   width: 76px;
+   margin-left: -38px;
+   text-align: center;
+}
+
+#infoBtn, #saveBtn {
+   right: 2.5vw;
+}
+
+.container {
+  position: fixed;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+#bottom, #top {
+   position: fixed;
+   bottom: 0vh;
+   left: 0;
+   width: 100%;
+	height: 100vh;
+   object-fit: cover;
+   object-position: 0 0;
+}
+
+#bottom {
+  z-index: 1;
+  filter: invert(100%);
+  /* REVIEW: temp fix above */
+}
+
+#top {
+  z-index: 2;
+}
+
+#info {
+   display: none;
+}
+
+#bg {
+   position: fixed;
+   width: 100vw;
+   height: 100vh;
+   background-color: black;
+   display: none;
+}
+
+#info.show {
+   width: 50vw;
+}
+
+#info.show, #bg.show {
+   z-index: 99;
+   display: inline;
+}
+
+#you {
+   font-style: italic;
+}
+
+.header.show, .box.show {
+   color: white;
+}
+
+.header:hover.show, .box:hover.show {
+   border-bottom: 1px solid #D7D7D7;
+   color: #D7D7D7;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media screen and (max-width: 500px)
+and (orientation : portrait)  {
+
+   .buttons {
+      display: inline-block;
+      z-index: 99;
+      color: white;
+      position: fixed;
+   }
+
+   #home, #info {
+      top: 1vh;
+      display: inline;
+   }
+
+   #infoBtn, .box {
+      display: none;
+   }
+
+   #bg {
+      display: inline-block;
+   }
+
+   #portrait {
+      display: inline-block;
+      left: 2.5vw;
+      width: 85vw;
+      position: fixed;
+      bottom: 2vh;
+   }
+}
