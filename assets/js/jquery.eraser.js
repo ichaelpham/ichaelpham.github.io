@@ -82,7 +82,8 @@
                 height = realHeight * scaleRatio,
                 pos = $this.offset(),
                 enabled = (options && options.enabled === false) ? false : true,
-                size = ((options && options.size) ? options.size : 40) * scaleRatio,
+                size = ((options && options.size) ? options.size : 60) * scaleRatio,
+                // REVIEW: ^^^^^^^^^^^^^^^^^^^^^^^^^^
                 completeRatio = (options && options.completeRatio) ? options.completeRatio : .7,
                 completeFunction = (options && options.completeFunction) ? options.completeFunction : null,
                 progressFunction = (options && options.progressFunction) ? options.progressFunction : null,
@@ -109,7 +110,7 @@
             ctx.strokeStyle = 'rgba(255,0,0,255)';
             ctx.lineWidth = size;
 
-            ctx.lineCap = 'round';
+            ctx.lineCap = 'butt';
             // REVIEW: could change this ^^^^^^
             // REVIEW: could change this ^^^^^^
             // REVIEW: could change this ^^^^^^
