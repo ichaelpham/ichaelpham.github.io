@@ -45,7 +45,7 @@ $(document).ready(function() {
       $(".buttons").show();
    });
 
-   $(".container").click(function(event) {
+   $(".container").on('click', function (event) {
       $(".buttons").show();
    });
 
