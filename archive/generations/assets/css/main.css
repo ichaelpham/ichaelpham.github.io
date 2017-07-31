@@ -151,9 +151,6 @@ and (orientation : portrait)  {
 
    #portrait {
       display: inline-block;
-      left: 2.5vw;
       width: 85vw;
-      position: fixed;
-      bottom: 2vh;
    }
 }
