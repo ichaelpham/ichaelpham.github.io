@@ -41,7 +41,11 @@ $(document).ready(function() {
          window.print();
    });
 
-   $(".container").bind('touchstart mouseover'(function(event) {
+   $(".container").mouseover(function(event) {
+      $(".buttons").show();
+   });
+
+   $(".container").click(function(event) {
       $(".buttons").show();
    });
 
