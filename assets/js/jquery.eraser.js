@@ -82,8 +82,7 @@
                 height = realHeight * scaleRatio,
                 pos = $this.offset(),
                 enabled = (options && options.enabled === false) ? false : true,
-                size = ((options && options.size) ? options.size : 60) * scaleRatio,
-                // REVIEW: ^^^^^^^^^^^^^^^^^^^^^^^^^^
+                size = ((options && options.size) ? options.size : 40) * scaleRatio,
                 completeRatio = (options && options.completeRatio) ? options.completeRatio : .7,
                 completeFunction = (options && options.completeFunction) ? options.completeFunction : null,
                 progressFunction = (options && options.progressFunction) ? options.progressFunction : null,

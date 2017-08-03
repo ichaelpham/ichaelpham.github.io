@@ -37,7 +37,6 @@ $(document).ready(function() {
    $("#saveBtn").click(function () {
       $(".buttons").hide();
       //Hide all other elements other than printarea.
-      $("#container").show();
          window.print();
    });
 
@@ -45,7 +44,7 @@ $(document).ready(function() {
       $(".buttons").show();
    });
 
-   $(".container").on('click', function (event) {
+   $(".container").click(function(event) {
       $(".buttons").show();
    });
 

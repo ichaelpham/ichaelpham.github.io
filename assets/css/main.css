@@ -20,10 +20,11 @@ body {
    text-decoration: none;
    position: fixed;
    bottom: 5vh;
+   height: 22px;
    z-index: 100;
    color: #000;
    display: inline-block;
-   border-bottom: 1px solid transparent;
+   border-bottom: 0px solid transparent;
    transition: 0.5s ease;
 }
 
@@ -112,8 +113,14 @@ body {
    display: inline;
 }
 
-#you {
-   font-style: italic;
+#mouse {
+   display: inline;
+   animation: fade 10s linear;
+}
+
+@keyframes fade {
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
 }
 
 .header.show, .box.show {
