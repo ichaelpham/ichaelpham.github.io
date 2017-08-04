@@ -35,17 +35,7 @@ $(document).ready(function() {
     });
 
    $("#saveBtn").click(function () {
-      $(".buttons").hide();
-      //Hide all other elements other than printarea.
          window.print();
-   });
-
-   $(".container").mouseover(function(event) {
-      $(".buttons").show();
-   });
-
-   $(".container").click(function(event) {
-      $(".buttons").show();
    });
 
    $(window).resize(function(){
