@@ -1,5 +1,5 @@
-/** Prevent all external links */
 $(document).ready(function() {
+   $('.loader').fadeOut(1000);
 
    /** Comment list **/
    var commentNumber = $('.comment__list ul li').length;
@@ -31,6 +31,7 @@ $(document).ready(function() {
       return (widthNoScroll - widthWithScroll);
    }
 
+   /** prevents outside hrefs **/
    $("a[href*='//']").on('click', function(e) {
       e.preventDefault();
       return false;
@@ -45,8 +46,10 @@ $(document).ready(function() {
    }
 
    function classSwitch__reader() {
+      $('.settings__modal__nav').toggleClass('reader');
       $('.modal__wrapper').toggleClass('open');
       $('.reader__container').toggleClass('open');
+      $('.reader__wrap').toggleClass('open');
       $('html body').toggleClass('noscroll');
    }
 
@@ -54,9 +57,7 @@ $(document).ready(function() {
       positionQuestion = 1;
       $('.question').hide();
       $('#q' + positionQuestion).css("display","flex").show();
-      $(".reader__container").load(location.href + " .reader__container > *");
    }
-   // REVIEW: make sure this is inlucluded and working in function
 
    function removeAll(){
       $('.temp').removeClass('open');
@@ -65,15 +66,6 @@ $(document).ready(function() {
       $('.reader__container').removeClass('open');
       $('html body').removeClass('noscroll');
    }
-
-/*
-   setTimeout(function() {
-      location.reload(true);
-      alert('fuck');
-   }, 1000);
-
-*/
-// REVIEW: ^^ time outfunction //
 
    /** Check if statements */
    function checkScroll() {
@@ -91,8 +83,7 @@ $(document).ready(function() {
       classSwitch();
       posReset()
    }  else if ($('.reader__container').hasClass('open')) {
-      removeAll();
-      posReset()
+      location.reload(true);
    }  else {
       classSwitch();
       posReset()
@@ -160,28 +151,28 @@ $(document).ready(function() {
       }  else if (val === "curated") {
          /** change all figcaption **/
          /** consider changing all of these **/
-            $('.reader__body figure:nth-of-type(1) img').attr('src', '../../../www.fairfaxstatic.com.au/content/dam/images/swap/1984.jpg');
-            $('.reader__body figure:nth-of-type(2) img').attr('src', '../../../www.fairfaxstatic.com.au/content/dam/images/swap/camera.jpeg');
+            $('.reader__body figure:nth-of-type(1) img').attr('src', 'www.fairfaxstatic.com.au/content/dam/images/swap/1984.jpg');
+            $('.reader__body figure:nth-of-type(2) img').attr('src', 'www.fairfaxstatic.com.au/content/dam/images/swap/camera.jpeg');
             /** review abover ^^ change dimensions **/
             $('.reader__body figure:nth-of-type(2) figcaption').text('test');
-            $('.reader__body figure:nth-of-type(3) img').attr('src', '../../../www.fairfaxstatic.com.au/content/dam/images/swap/FacialRecLoop02-theintercept.gif');
+            $('.reader__body figure:nth-of-type(3) img').attr('src', 'www.fairfaxstatic.com.au/content/dam/images/swap/FacialRecLoop02-theintercept.gif');
             $('.reader__body figure:nth-of-type(3) figcaption').text('test');
-            $('.reader__body figure:nth-of-type(5) img').attr('src', '../../../www.fairfaxstatic.com.au/content/dam/images/swap/1984.jpg');
+            $('.reader__body figure:nth-of-type(5) img').attr('src', 'www.fairfaxstatic.com.au/content/dam/images/swap/1984.jpg');
             $('.reader__body figure:nth-of-type(4) figcaption').text('test');
             $('.reader__body figure:nth-of-type(5) figcaption').text('test');
       }  else if (val === "honest") {
             /** change this to 'realistic' **/
             /** change all images **/
-            $('.reader__body figure:nth-of-type(1) img').attr('src', '../../../www.fairfaxstatic.com.au/content/dam/images/swap/FacialRecLoop02-theintercept.gif');
+            $('.reader__body figure:nth-of-type(1) img').attr('src', 'www.fairfaxstatic.com.au/content/dam/images/swap/FacialRecLoop02-theintercept.gif');
             $('.reader__body figure:nth-of-type(1) figcaption').text('test');
-            $('.reader__body figure:nth-of-type(2) img').attr('src', '../../../www.fairfaxstatic.com.au/content/dam/images/swap/faceswap.png');
+            $('.reader__body figure:nth-of-type(2) img').attr('src', 'www.fairfaxstatic.com.au/content/dam/images/swap/faceswap.png');
             /** review abover ^^ change dimensions **/
             $('.reader__body figure:nth-of-type(2) figcaption').text('test');
-            $('.reader__body figure:nth-of-type(3) img').attr('src', '../../../www.fairfaxstatic.com.au/content/dam/images/swap/1020.png');
+            $('.reader__body figure:nth-of-type(3) img').attr('src', 'www.fairfaxstatic.com.au/content/dam/images/swap/1020.png');
             $('.reader__body figure:nth-of-type(3) figcaption').text('test');
-            $('.reader__body figure:nth-of-type(4) img').attr('src', '../../../www.fairfaxstatic.com.au/content/dam/images/swap/1984.jpg');
+            $('.reader__body figure:nth-of-type(4) img').attr('src', 'www.fairfaxstatic.com.au/content/dam/images/swap/1984.jpg');
             $('.reader__body figure:nth-of-type(4) figcaption').text('test');
-            $('.reader__body figure:nth-of-type(5) img').attr('src', '../../../www.fairfaxstatic.com.au/content/dam/images/swap/camera.jpeg');
+            $('.reader__body figure:nth-of-type(5) img').attr('src', 'www.fairfaxstatic.com.au/content/dam/images/swap/camera.jpeg');
             $('.reader__body figure:nth-of-type(5) figcaption').text('test');
       }  else if (val === "exciting") {
       }  else if (val === "imgFadeout") {
@@ -192,7 +183,6 @@ $(document).ready(function() {
       }
    });
 
-   // REVIEW: probably the best way to fake it would be a remove all function :( //
 
    /** Email validation for form **/
    function validateEmail(email) {
@@ -275,10 +265,27 @@ $(document).ready(function() {
          $(".commentForm").removeClass('reUseRightComment reUseWrongComment').addClass("reUseRight");
          $('.commentForm').attr("placeholder", "Your comment has been posted").val("").focus().blur();
          $(".commentForm").removeClass('reUseRight reUseWrong').addClass("reUseRightComment");
-         $(".reader__comments__list ul").append("<li><div class='author__details'><span class='name'>" + nameVal + "</span><span class='divider'>&#8226;</span><time>" + output + "</time></div><p>" + commentVal + "</p></li>");
+         $(".reader__comments__list ul").append("<li><div class='author__details'><span class='name'>" + nameVal + "</span><span class='divider'></span><time>" + output + "</time></div><p>" + commentVal + "</p></li>");
       }
       return false;
       });
+
+
+      $('.topPage').click(function(){
+         $(".reader__container").animate(
+            { scrollTop: 0 }, 500);
+         return false;
+      });
+
+      /** timeout function **/
+      var timeout = null;
+      $(document).on('mousemove', function() {
+         clearTimeout(timeout);
+         timeout = setTimeout(function() {
+            console.log('Mouse idle for 5 minutes');
+            location.reload(true);
+      }, 300000);
+});
 
 /** End of function **/
 });

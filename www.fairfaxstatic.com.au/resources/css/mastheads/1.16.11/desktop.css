@@ -1,24 +1,22 @@
 /** Typefaces **/
 @font-face {
   font-family: 'Neuzeit book';
-  src: url('../../../fonts/neuzeit-book.eot.eot'); /* IE9 Compat Modes */
-  src: url('../../../fonts/neuzeit-book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../../../fonts/neuzeit-book.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../../../fonts/neuzeit-book.woff2') format('woff2'), /*  Modern Browsers */
-       url('../../../fonts/neuzeit-book.ttf')  format('truetype'); /* Safari, Android, iOS */
+  src: url('../../../fonts/neuzeit-book.eot.eot');
+  src: url('../../../fonts/neuzeit-book.eot?#iefix') format('embedded-opentype'),
+       url('../../../fonts/neuzeit-book.woff') format('woff'),
+       url('../../../fonts/neuzeit-book.ttf')  format('truetype');
 }
 
 @import url('https://fonts.googleapis.com/css?family=PT+Serif:400,700');
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-/** Reader Nav Settings **/
-html body.noscroll {
-   overflow-y: hidden;
+.loader {
+   top: 0;
+   left: 0;
+   height: 100vh;
+   width: 100%;
+   background: #233F34;
+   z-index:999;
+   position: fixed;
 }
 
 .temp {
@@ -36,6 +34,17 @@ html body.noscroll {
    transition: top 0.5s;
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/** Reader Nav Settings **/
+html body.noscroll {
+   overflow-y: hidden;
+}
+
 /** survey **/
 .settings__modal__nav {
    top: 38vh;
@@ -45,13 +54,14 @@ html body.noscroll {
    width: 300px;
    height: 48px;
    z-index: 200;
-   background: blue;
+   background: #233F34;
    border-radius: 2.5px;
    display: flex;
    justify-content: space-between;
    transition: top 0.5s;
    transition: background 0.5s;
-   font-family: 'Neuzeit', Arial, Helvetica, sans-serif;
+   font-family: 'Neuzeit book', Arial, Helvetica, sans-serif;
+   /* REVIEW: border */
 }
 
 .settings__modal__nav div {
@@ -59,45 +69,56 @@ html body.noscroll {
    line-height: 48px;
 }
 
-.about {
-   width: 48px;
-   text-align: center;
-   background: red;
-}
-
-.about p, .settings p {
-   font-size: 1.25em;
-   color: white;
-   margin-bottom: 0;
-}
 .settings {
-   flex: 1;
-   display: flex;
-   transition: opacity 0.1s ease;
+   padding-left: 12px;
 }
 
-.settings .helper{
-   padding-left: 12px;
+.about {
+   text-align: center;
    padding-right: 12px;
 }
 
- .settings p {
-    padding-left: 6px;
-}
-
-.settings img {
-   width: 28px;
-   height: inherit !important;
-   line-height: inherit;
-   vertical-align: middle;
+.logoNew p {
+   font-size: 1.25em;
+   color: white;
+   margin-bottom: 0;
 }
 
 .helper {
    display: inline-block;
    height: 100%;
+   width: 24px;
+   vertical-align: top;
+   cursor: pointer;
+}
+
+.custom__icon .helper svg {
+   display: inline-block;
+   width: 100%;
+   height: inherit !important;
+   line-height: inherit;
    vertical-align: top;
 }
 
+.st0 {
+   fill:#FFFFFF;
+}
+
+.st1 {
+   fill:#69A486;
+   transition: x 0.5s;
+}
+
+.aboutOuter {
+   fill: white;
+}
+
+.aboutI {
+   fill: #69A486;
+   transition: transform 0.5s;
+}
+
+/** settings open settings modal **/
 .settings__modal__nav.open{
    top: 0;
    width: 100%;
@@ -107,28 +128,34 @@ html body.noscroll {
    margin-top: 0;
    border-radius: 0;
    background: white;
-   border-bottom: 1px solid rgba(0,0,0,0.1);
-   /* REVIEW: border */
+   overflow-y: scroll;
 }
 
-.settings__modal__nav.open .settings .helper, .settings__modal__nav.open .about{
+.settings__modal__nav.open .settings {
    padding-left: 4vh;
+}
+
+.settings__modal__nav.open .about {
    padding-right: 4vh;
 }
 
- .settings__modal__nav.open .settings p {
-   padding-left: 0;
-   color: black;
+.settings__modal__nav.open .logoNew p,
+.settings__modal__nav.open .st0,
+.settings__modal__nav.open .aboutOuter {
+   fill: #233F34;
+   color: #233F34;
 }
 
+/** reader open settings modal **/
 .modal__wrapper {
    width: 100vw;
    height: 100vh;
    top: -100vh;
    left: 0;
-   background: white;
    position: fixed;
    transition: top .5s;
+   overflow-y: scroll;
+   color: #233F34;
 }
 
 .modal__wrapper.open {
@@ -155,10 +182,11 @@ html body.noscroll {
    width: 100%;
    margin: 44px auto 0 auto;
    height: 88px;
+   background: #E5E5E5;
 }
 
 .question__heading p {
-   line-height: 100px;
+   line-height: 88px;
    margin-bottom: 0;
    font-size: 1.25em;
    text-transform: capitalize;
@@ -179,11 +207,12 @@ html body.noscroll {
 }
 
 .question label:nth-child(2) {
-   background: palegreen;
+   background: #233F34;
+   color: white;
 }
 
 .question label:nth-child(3) {
-   background: violet;
+   background: white;
 }
 
 .question label div {
@@ -202,7 +231,7 @@ html body.noscroll {
 .question label h1 {
    font-size: 2.5em;
    margin: 0;
-   font-family: 'Neuzeit book', monospace;
+   font-family: 'Neuzeit book', Arial, Helvetica, sans-serif;
 }
 
 #q2, #q3, #q4, #q5, #q6, #q7, #q8 {
@@ -211,7 +240,6 @@ html body.noscroll {
 
 .question__button {
    bottom: 0;
-   color: black;
    height: 12vh;
    line-height: 12vh;
    display: inline-block;
@@ -223,58 +251,63 @@ html body.noscroll {
 
 .back {
    left: 4vh;
-   transition: left 0.1s;
+   transition: left 0.5s;
    font-size: 1.25em;
+   color: white;
 }
 
 .skip {
    right: 4vh;
-   transition: right 0.1s;
+   transition: right 0.5s;
    font-size: 2em;
 }
 
 /** Q btn hover interactions **/
 .back:hover {
    left: 3.5vh;
-   transition: left 0.1s;
+   transition: left 0.5s;
 }
 
 .skip:hover {
    right: 3.5vh;
-   transition: right 0.1s;
+   transition: right 0.5s;
 }
 
-/** hover interactions **/
-.settings:hover,
-.about:hover p,
-.question label:hover div,
-.readerBtn:hover p,
-.text__exit:hover p {
-   opacity: 0.5;
+/** customIcons interactions **/
+.settings:hover .knobLeft {
+   x: 25.3;
+   transition: x 0.5s;
+}
+
+.settings:hover .knobRight {
+   x: 4.5;
+   transition: x 0.5s;
+}
+
+.about:hover .iDot {
+   transform: translateY(5px);
+   transition: transform 0.5s;
+}
+
+/** customIcons interactions **/
+.question label:hover div {
+   color: #69A486;
+   transition: color 0.5s;
    cursor: pointer;
 }
 
 /** Reader settings */
-.reader__container {
-   display: none;
-}
-
-.reader__container.down {
-   animation: pagedown 0.5s ease;
-}
-
 .reader__container.open {
-   display: inline-block;
-   position: fixed;
+   overflow-y: scroll;
    width: 100%;
    height: 100vh;
    z-index: 200;
-   bottom: -48px;
    left: 0;
-   overflow-y: scroll;
+   top: 0;
    background: white;
-   animation: pageup 0.2s ease;
    font-family: Arial, Helvetica, sans-serif;
+   display: inline-block;
+   position: fixed;
 }
 
 .reader__container.serif {
@@ -282,29 +315,25 @@ html body.noscroll {
    /* REVIEW:  */
 }
 
-@keyframes pageup {
-   0% { top: 100vh; }
-   100% { top: 0; }
-}
-
-@keyframes pagedown {
-   0% { top: 0; }
-   100% { top: 200vh; }
-}
-
 .reader__wrap {
+   display: none;
+}
+
+.reader__wrap.open {
+   display: block;
    padding-left: 12vw;
    padding-right: 12vw;
    width: 70%;
    margin: 0 auto;
    font-size: 1.15em;
    line-height: 1.6;
-   color: rgba(0,0,0,1);
-   font-family: 'Neuzeit', Arial, Helvetica, sans-serif;
+   color: #233F34;
+   font-family: 'Neuzeit book', Arial, Helvetica, sans-serif;
+   top: 0;
 }
 
 .reader__body {
-   margin: 3em auto 0 auto;
+   margin: 6em auto 0 auto;
 }
 
 .reader__body header .author__details {
@@ -315,25 +344,24 @@ html body.noscroll {
 }
 
 .reader__body header {
-   border-bottom: 1px solid rgba(0,0,0,0.2);
+   border-bottom: 1px solid #E5E5E5;
 }
 
 .author__details .name {
    font-weight: bold;
-   text-transform: uppercase;
+   color: #69A486;
 }
 
 .reader__body header .name::after {
    content: "|";
    margin: 0 10px;
-   font-weight: bolder;
+   font-weight: normal;
    position: relative;
    font-size: 90%;
-   top: -0.1em;
 }
 
 .readerSubject {
-   color: red;
+   color: #69A486;
    font-weight: bold;
    font-size: 0.8em;
    display: inline-block;
@@ -350,7 +378,7 @@ html body.noscroll {
    margin: 0.75em 0 0 0;
    text-transform: capitalize;
    width: 90%;
-   font-family: 'Neuzeit', Arial, Helvetica, sans-serif;
+   font-family: 'Neuzeit book', Arial, Helvetica, sans-serif;
 }
 
 .reader__body h1:nth-of-type(2) {
@@ -374,6 +402,7 @@ html body.noscroll {
 .sub {
    font-weight: bold;
    display: block;
+   color: #69A486;
 }
 
 .reader__body figure {
@@ -392,7 +421,7 @@ html body.noscroll {
 
 .reader__body figcaption {
    font-style: normal;
-   color: rgba(0,0,0,0.7);
+   color: #8B8B8B;
    text-align: left;
    display: block;
    padding: 1em 0 0 0;
@@ -400,6 +429,7 @@ html body.noscroll {
 }
 
 .credits {
+   color: #69A486;
 }
 
 .reader__body figure img.imgDropShadow {
@@ -407,7 +437,8 @@ html body.noscroll {
 }
 
 .reader__body figure img.imgBorder {
-   border: 15px solid #2D0F23;
+   border: 15px solid #BDBDC2;
+   /* REVIEW: change this to light green */
 }
 
 .reader__body figcaption:first-child {
@@ -415,12 +446,12 @@ html body.noscroll {
 }
 
 .reader__body figcaption .sub {
-   color: rgba(0,0,0,1);
+   color: #69A486;
 }
 
 .heroImg {
-   border-top: 5px solid rgba(0,0,0,1);
-   border-bottom: 1px solid rgba(0,0,0,0.2);
+   border-top: 5px solid #233F34;
+   border-bottom: 1px solid #E5E5E5;
 }
 
 .heroImg figcaption {
@@ -428,15 +459,15 @@ html body.noscroll {
 }
 
 .readerQuote {
-   border-left: 5px solid black;
+   border-left: 5px solid #233F34;
    padding: 0 1.5em;
 }
 
 .subBox {
    margin-top: 3em;
    padding: 1.5em 0;
-   border-top: 5px solid rgba(0,0,0,1);
-   border-bottom: 1px solid rgba(0,0,0,0.2);
+   border-top: 5px solid #233F34;
+   border-bottom: 1px solid #E5E5E5;
 }
 
 .sub + p, .subBox .sub + p {
@@ -450,7 +481,7 @@ html body.noscroll {
 }
 
 .disclaimer {
-   color: rgba(0,0,0,0.7);
+   color: #8B8B8B;
    font-size: 0.8em;
 }
 
@@ -471,7 +502,7 @@ html body.noscroll {
 }
 
 .readerForm[type=text]:focus {
-   border-color: #2D0F23;
+   border-color: #8B8B8B;
    outline: 0px solid transparent;
 }
 
@@ -480,7 +511,7 @@ html body.noscroll {
    background-repeat: no-repeat;
    background-position: 96% 50%;
    background-size: 20px 20px;
-   border-color: green;
+   border-color: #69A486;
 }
 
 .readerForm.reUseWrong {
@@ -488,22 +519,26 @@ html body.noscroll {
    background-repeat: no-repeat;
    background-position: 96% 50%;
    background-size: 20px 20px;
-   border-color: red;";
+   border-color: red;
 }
 
 .readerBtn {
    flex-basis: 23%;
-   background-color: #F067E6;
-   color: #2D0F23;
+   background: #69A486;
+   color: white;
    border: none;
    border-radius: 2.5px;
    height: 2.5em;
    transition: opacity 0.1s ease;
+   cursor: pointer;
 }
 
 .readerBtn p {
    line-height: 2.5em;
-   margin-bottom: 0
+   margin-bottom: 0;
+   margin-top: 0;
+   color: white;
+   transition: color 0.5s;
 }
 
 #emailBtn p {
@@ -513,6 +548,11 @@ html body.noscroll {
 .readerBtn:focus {
    outline: 0px solid transparent;
    border: 0px solid transparent;
+}
+
+.readerBtn:hover p {
+   color: #233F34;
+   transition: color 0.5s;
 }
 
 .valList {
@@ -526,22 +566,22 @@ html body.noscroll {
    display: inline-block;
    text-transform: capitalize;
    padding: 0 0.6em;
-   color: rgba(0,0,0,0.5);
-   background: rgba(0,0,0,0.1);
+   color: #8B8B8B;
+   background: #E5E5E5;
    border-radius: 2.5px;
 }
 
 .reader__comments {
-   margin: 0 auto 3em auto;
+   margin: 0 auto;
    padding-top: 6em;
-   padding-bottom: 9em;
+   padding-bottom: 6em;
 }
 
 .reader__comments header {
    margin: 0 auto 0 0;
    padding-bottom: 1.5em;
-   border-bottom: 5px solid #2D0F23;
-   font-family: 'Neuzeit', Arial, Helvetica, sans-serif;
+   border-bottom: 5px solid #233F34;
+   font-family: 'Neuzeit book', Arial, Helvetica, sans-serif;
 }
 
 .reader__comments__list .author__details {
@@ -549,16 +589,12 @@ html body.noscroll {
    font-size: 0.8em;
 }
 
-.author__details .name {
-   font-weight: bold;
-}
-
 .author__details .name::after {
    content: "|";
    margin: 0 10px;
    position: relative;
    font-size: 90%;
-   top: -0.1em;
+   color: #233F34;
 }
 
 .reader__comments__list {
@@ -605,7 +641,7 @@ html body.noscroll {
    background-repeat: no-repeat;
    background-position: 96% 50%;
    background-size: 20px 20px;
-   border-color: green;
+   border-color: #69A486;;
 }
 
 .nameForm.reUseWrong {
@@ -651,12 +687,39 @@ html body.noscroll {
 }
 
 .nameForm[type=text]:focus, .commentForm:focus {
-   border-color: #2D0F23;
+   border-color: #BDBDC2;
    outline: 0px solid transparent;
 }
 
 #commentBtn {
    margin-top: 1.5em;
+}
+
+.topPage {
+   display: inline-block;
+   width: 100%;
+   height: 88px;
+   background: #233F34;
+   bottom: 0;
+   left: 50%;
+   cursor: pointer;
+   transition: transform 0.5s;
+}
+
+.topPage p {
+   display: block;
+   width: 88px;
+   color: white;
+   text-align: center;
+   margin: 0 auto;
+   font-size: 1.5em;
+   margin: 0 auto;
+   line-height: 88px;
+}
+
+.topPage:hover p {
+   transform: translateY(-0.5vh);
+   transition: transform 0.5s;
 }
 
 /* REVIEW:  */
@@ -669,7 +732,7 @@ html body.noscroll {
 }
 
 .reader__container.night, .text__exit.night {
-   background: #2D0F23;
+   background: #BDBDC2;
 }
 
 .reader__comments.night header {
@@ -726,7 +789,7 @@ a[href*='//'] {
 }
 
 .header-wrap {
-   border-bottom: 45px solid #efeff4;
+   border-bottom: 45px solid #E5E5E5;
    margin-bottom: 45px;
 }
 
@@ -1812,7 +1875,7 @@ blockquote q:after {
 
 .btn:focus,
 .btn:hover {
-    background-color: #efeff4;
+    background-color: #E5E5E5;
     outline-offset: -1px
 }
 
@@ -4486,7 +4549,7 @@ blockquote cite {
     letter-spacing: normal;
     width: 100%;
     margin-bottom: 30px;
-    background: #efeff4;
+    background: #E5E5E5;
     min-height: 360px;
     padding: 20px
 }
@@ -6383,7 +6446,7 @@ body:not(.persistent-on) .nav--primary.is_fm-long-list:after {
 }
 
 .table--data .table__subheading th {
-    background: #efeff4;
+    background: #E5E5E5;
     font-size: 14px;
     text-align: center;
     padding: 10px 0
@@ -7236,7 +7299,7 @@ body:not(.persistent-on) .nav--primary.is_fm-long-list:after {
 .network__additional {
     padding: 15px 0 10px;
     margin: 0 10px;
-    border-top: 1px solid #efeff4;
+    border-top: 1px solid #E5E5E5;
     font-size: .6875rem;
     line-height: 1
 }
@@ -7565,7 +7628,7 @@ input.search-box__text {
 }
 
 .tab__nav li {
-    background: #efeff4;
+    background: #E5E5E5;
     margin: 0;
     border-right: 2px solid #fff;
     border-bottom: 2px solid #fff;
@@ -7754,7 +7817,7 @@ input.search-box__text {
 }
 
 .pagination .pagination__current-page {
-    background-color: #efeff4;
+    background-color: #E5E5E5;
     border-color: transparent;
     color: #666
 }
@@ -10772,7 +10835,7 @@ select.comment__sort:focus {
     left: 10px;
     right: 10px;
     bottom: 0;
-    background: #efeff4;
+    background: #E5E5E5;
     z-index: -1
 }
 
@@ -11190,7 +11253,7 @@ select.comment__sort:focus {
 }
 
 .panel--bus-most-searched ul li {
-    border-bottom: 1px solid #efeff4;
+    border-bottom: 1px solid #E5E5E5;
     padding-bottom: 7.5px
 }
 
@@ -11420,7 +11483,7 @@ select.comment__sort:focus {
 }
 
 .article .module__wof {
-    background: #efeff4;
+    background: #E5E5E5;
     padding: 20px 15px
 }
 
@@ -11997,7 +12060,7 @@ select.comment__sort:focus {
 .section-name {
     float: left;
     letter-spacing: normal;
-    border-left: 1px solid #efeff4;
+    border-left: 1px solid #E5E5E5;
     padding-left: 20px;
     font-family: merriweather, georgia, serif;
     text-decoration: none!important
@@ -13089,7 +13152,7 @@ article.article {
 }
 
 .article .sponsor {
-    background: #efeff4;
+    background: #E5E5E5;
     width: 100%;
     padding: 10px;
     text-align: center;
@@ -13312,7 +13375,7 @@ article.article {
     top: 0;
     visibility: hidden;
     opacity: 0;
-    background: #efeff4;
+    background: #E5E5E5;
     padding: 20px;
     transition: all .3s ease-in
 }
@@ -13416,7 +13479,7 @@ article.article {
 }
 
 .panel--topics li a {
-    background: #efeff4;
+    background: #E5E5E5;
     padding: 2px;
     text-decoration: none;
     color: #333;
