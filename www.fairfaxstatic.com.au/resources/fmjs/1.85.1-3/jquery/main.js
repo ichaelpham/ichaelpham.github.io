@@ -1,5 +1,5 @@
 $(document).ready(function() {
-   $('.loader').fadeOut(1000);
+   $('.loader').fadeOut(500);
 
    /** Comment list **/
    var commentNumber = $('.comment__list ul li').length;
@@ -49,6 +49,7 @@ $(document).ready(function() {
       $('.settings__modal__nav').toggleClass('reader');
       $('.modal__wrapper').toggleClass('open');
       $('.reader__container').toggleClass('open');
+      $('.topPage').toggleClass('open');
       $('.reader__wrap').toggleClass('open');
       $('html body').toggleClass('noscroll');
    }
@@ -61,7 +62,8 @@ $(document).ready(function() {
 
    function removeAll(){
       $('.temp').removeClass('open');
-      $('.settings__modal__nav').removeClass('open');
+      $('.infoSection').removeClass('open');
+      $('.settings__modal__nav').removeClass('open info');
       $('.modal__wrapper').removeClass('open');
       $('.reader__container').removeClass('open');
       $('html body').removeClass('noscroll');
@@ -79,15 +81,39 @@ $(document).ready(function() {
    /** Buttons **/
    /** Reset Reader **/
    $('.settings').click(function() {
-      if ($('.modal__wrapper').hasClass('open')) {
-      classSwitch();
-      posReset()
+      if ($('.modal__wrapper').hasClass('open') && $('.infoSection').hasClass('open')) {
+         $('.infoSection').toggleClass('open');
+         $('.settings__modal__nav').toggleClass('info');
    }  else if ($('.reader__container').hasClass('open')) {
-      location.reload(true);
+         location.reload(true);
+   }  else if ($('.infoSection').hasClass('open')) {
+         $('.infoSection').toggleClass('open');
+         $('.settings__modal__nav').toggleClass('info');
+         $('.modal__wrapper').toggleClass('open')
    }  else {
-      classSwitch();
-      posReset()
+         classSwitch();
+         posReset()
+         $('html body').toggleClass('noscroll');
    }
+   });
+
+   $('.about').click(function() {
+      if ($('.modal__wrapper').hasClass('open') && $('.infoSection').hasClass('open')) {
+         $('.infoSection').toggleClass('open');
+         $('.settings__modal__nav').toggleClass('info');
+   }  else if ($('.modal__wrapper').hasClass('open') | $('.reader__container').hasClass('open')) {
+         $('.infoSection').toggleClass('open');
+         $('.settings__modal__nav').toggleClass('info');
+   }  else {
+         $('.infoSection').toggleClass('open');
+         $('.temp').toggleClass('open');
+         $('.settings__modal__nav').toggleClass('open info');
+         $('html body').toggleClass('noscroll');
+   }
+   });
+
+   $('.logoNew').click(function() {
+      removeAll();
    });
 
    /** onClick Label **/

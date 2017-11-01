@@ -82,6 +82,7 @@ html body.noscroll {
    font-size: 1.25em;
    color: white;
    margin-bottom: 0;
+   transition: color 0.5s;
 }
 
 .helper {
@@ -89,6 +90,9 @@ html body.noscroll {
    height: 100%;
    width: 24px;
    vertical-align: top;
+}
+
+.custom__icon {
    cursor: pointer;
 }
 
@@ -118,6 +122,28 @@ html body.noscroll {
    transition: transform 0.5s;
 }
 
+
+/** customIcons interactions **/
+.settings:hover .knobLeft {
+   x: 25.3;
+   transition: x 0.5s;
+}
+
+.settings:hover .knobRight {
+   x: 4.5;
+   transition: x 0.5s;
+}
+
+.about:hover .iDot {
+   transform: translateY(5px);
+   transition: transform 0.5s;
+}
+
+.logoNew p:hover, .settings__modal__nav.open .logoNew p:hover {
+   color: #69A486;
+   transition: color 0.5s;
+}
+
 /** settings open settings modal **/
 .settings__modal__nav.open{
    top: 0;
@@ -129,6 +155,8 @@ html body.noscroll {
    border-radius: 0;
    background: white;
    overflow-y: scroll;
+   transition: top 0.5s;
+   transition: background 0.5s;
 }
 
 .settings__modal__nav.open .settings {
@@ -144,6 +172,17 @@ html body.noscroll {
 .settings__modal__nav.open .aboutOuter {
    fill: #233F34;
    color: #233F34;
+}
+
+.settings__modal__nav.open.info {
+   background: #233F34;
+}
+
+.settings__modal__nav.open.info .logoNew p,
+.settings__modal__nav.open.info .st0,
+.settings__modal__nav.open.info .aboutOuter {
+   fill: white;
+   color: white;
 }
 
 /** reader open settings modal **/
@@ -163,6 +202,44 @@ html body.noscroll {
    top: 0;
    z-index: 400;
    transition: top .5s;
+}
+
+.infoSection {
+   left: 0;
+   top: -100vh;
+   position: fixed;
+   width: 100vw;
+   margin-top: 48px;
+   height: calc(100vh - 48px);
+   background: rgba(35,63,52,0);
+   color: white;
+   z-index: 999;
+   transition: top 0.5s;
+   overflow-y: scroll;
+}
+
+.infoSection.open {
+   top: 0;
+   background: white;
+   transition: top 0.5s;
+}
+
+.infoDesc {
+   height: calc(100vh - 48px);
+   background: #233F34;
+   width: 100%;
+}
+
+.infoSection p {
+   position: absolute;
+   width: 60%;
+   font-size: 2em;
+   text-align: center;
+   color: white;
+   top: 35%;
+   left: 50%;
+   transform: translate(-50%, 0);
+   margin: 0;
 }
 
 .settings__slider {
@@ -273,23 +350,8 @@ html body.noscroll {
    transition: right 0.5s;
 }
 
-/** customIcons interactions **/
-.settings:hover .knobLeft {
-   x: 25.3;
-   transition: x 0.5s;
-}
 
-.settings:hover .knobRight {
-   x: 4.5;
-   transition: x 0.5s;
-}
-
-.about:hover .iDot {
-   transform: translateY(5px);
-   transition: transform 0.5s;
-}
-
-/** customIcons interactions **/
+/** question interactions **/
 .question label:hover div {
    color: #69A486;
    transition: color 0.5s;
@@ -298,6 +360,8 @@ html body.noscroll {
 
 /** Reader settings */
 .reader__container.open {
+   display: inline-block;
+   position: fixed;
    overflow-y: scroll;
    width: 100%;
    height: 100vh;
@@ -305,9 +369,7 @@ html body.noscroll {
    left: 0;
    top: 0;
    background: white;
-   font-family: Arial, Helvetica, sans-serif;
-   display: inline-block;
-   position: fixed;
+   font-family: 'Neuzeit', Arial, Helvetica, sans-serif;
 }
 
 .reader__container.serif {
@@ -377,7 +439,6 @@ html body.noscroll {
    line-height: 1.2;
    margin: 0.75em 0 0 0;
    text-transform: capitalize;
-   width: 90%;
    font-family: 'Neuzeit book', Arial, Helvetica, sans-serif;
 }
 
@@ -696,15 +757,20 @@ html body.noscroll {
 }
 
 .topPage {
+   display: none;
+}
+
+.topPage.open {
    display: inline-block;
-   width: 100%;
    height: 88px;
+   width: 100%;
    background: #233F34;
    bottom: 0;
    left: 50%;
    cursor: pointer;
    transition: transform 0.5s;
 }
+
 
 .topPage p {
    display: block;
