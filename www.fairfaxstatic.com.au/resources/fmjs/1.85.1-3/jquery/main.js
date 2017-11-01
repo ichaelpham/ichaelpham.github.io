@@ -32,7 +32,7 @@ $(document).ready(function() {
    }
 
    /** prevents outside hrefs **/
-   $("a[href*='//']").on('click', function(e) {
+   $("a[href*='theage']").on('click', function(e) {
       e.preventDefault();
       return false;
    });

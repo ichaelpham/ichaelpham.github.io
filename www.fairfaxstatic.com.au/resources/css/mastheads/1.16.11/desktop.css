@@ -225,20 +225,11 @@ html body.noscroll {
 }
 
 .infoDesc {
-   height: calc(100vh - 48px);
    background: #233F34;
    width: 100%;
-}
-
-.infoSection p {
-   position: absolute;
-   width: 60%;
    font-size: 2em;
    text-align: center;
    color: white;
-   top: 25%;
-   left: 50%;
-   transform: translate(-50%, 0);
    margin: 0;
    /* REVIEW: higher margin */
    /* REVIEW: Add link to origonal article and your email */
@@ -850,11 +841,14 @@ label::before {
    display: none !important;
 }
 
+/*
+review
 a[href*='//'] {
    text-decoration: none !important;
    color: inherit !important;
    pointer-events: none !important;
 }
+*/
 
 .header-wrap {
    border-bottom: 45px solid #E5E5E5;
