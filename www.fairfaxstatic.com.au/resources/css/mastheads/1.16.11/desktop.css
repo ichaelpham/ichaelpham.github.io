@@ -236,10 +236,12 @@ html body.noscroll {
    font-size: 2em;
    text-align: center;
    color: white;
-   top: 35%;
+   top: 25%;
    left: 50%;
    transform: translate(-50%, 0);
    margin: 0;
+   /* REVIEW: higher margin */
+   /* REVIEW: Add link to origonal article and your email */
 }
 
 .settings__slider {
