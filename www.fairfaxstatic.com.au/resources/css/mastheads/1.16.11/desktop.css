@@ -48,7 +48,7 @@ html body.noscroll {
 /** survey **/
 .settings__modal__nav {
    top: 38vh;
-   left: 50vw;
+   left: 50%;
    margin-left: -150px;
    position: fixed;
    width: 300px;
@@ -277,12 +277,12 @@ html body.noscroll {
 }
 
 .question label:nth-child(2) {
-   background: #233F34;
-   color: white;
+   background: white;
 }
 
 .question label:nth-child(3) {
-   background: white;
+   background: #233F34;
+   color: white;
 }
 
 .question label div {
@@ -311,25 +311,28 @@ html body.noscroll {
 .question__button {
    bottom: 0;
    height: 12vh;
-   line-height: 12vh;
-   display: inline-block;
    position: absolute;
    transition: opacity 0.1s ease;
-   width: auto;
+   width: 100%;
    cursor: pointer;
+}
+
+.question__button div {
+   line-height: 12vh;
+   position: absolute;
 }
 
 .back {
    left: 4vh;
    transition: left 0.5s;
    font-size: 1.25em;
-   color: white;
 }
 
 .skip {
    right: 4vh;
    transition: right 0.5s;
    font-size: 2em;
+   color: white;
 }
 
 /** Q btn hover interactions **/
@@ -833,7 +836,9 @@ html body.noscroll {
 .footer__bottom .btn,
 .grid>.grid,
 iframe,
-#navigation-toggle {
+#navigation-toggle,
+.panel .panel--video-playlist,
+.aside--main {
    display: none !important;
 }
 
@@ -15389,4 +15394,75 @@ select.live__sort:focus {
     .strap--defcon-single .story:after {
         content: none
     }
+}
+
+/** responsive shiet **/
+@media (max-width:800px) {
+   .outer-wrap,
+   .header-wrap,
+   .wrap.grid,
+   .main,
+   .template--sidebar-right .main,
+   .article__toolbar,
+   .article__toolbar,
+   .wrap,
+   .article__header h1 {
+      width: 100%;
+   }
+
+   .article__body > p {
+      padding-right: 0;
+   }
+
+   .header-wrap {
+      min-width: 0;
+   }
+
+   .question label {
+      flex-basis: 100%;
+      height: calc((88vh - 132px)/2);
+      padding: 0;
+      opacity: 1;
+      transition: opacity 0.1s ease;
+      position: relative;
+      text-align: center;
+   }
+
+   .question label div {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+   }
+
+   .question__button {
+      color: white;
+      background: #233F34;
+   }
+
+   .reader__wrap.open {
+      display: block;
+      padding-left: 8vw;
+      padding-right: 8vw;
+      width: 100%;
+   }
+
+   .subFormWrap {
+      flex-wrap: wrap;
+      height: auto;
+   }
+
+   .subBox form{
+      margin: 0;
+      flex-basis: 100%;
+   }
+
+   #emailBtn {
+      margin-top: 1.5em;
+   }
+
+   .readerBtn {
+      flex-basis: 100%;
+   }
+
+
 }
