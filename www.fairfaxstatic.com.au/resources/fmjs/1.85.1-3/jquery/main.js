@@ -36,6 +36,10 @@ $(document).ready(function() {
       e.preventDefault();
       return false;
    });
+   $("a[href*='fairfax']").on('click', function(e) {
+      e.preventDefault();
+      return false;
+   });
 
    function classSwitch() {
       positionQuestion = 1;

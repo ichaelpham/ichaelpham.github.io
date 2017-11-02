@@ -212,9 +212,10 @@ html body.noscroll {
    height: calc(100vh - 48px);
    color: white;
    z-index: 999;
-   transition: top 0.5s;
+   transition: top 10s;
    overflow-y: scroll;
 }
+/* REVIEW: make sure change the transitions back */
 
 .infoSection.open {
    top: 0;
@@ -223,7 +224,11 @@ html body.noscroll {
    transition: top 0.5s;
 }
 
-.infoDesc {
+.infoSection .infoDesc {
+   top: -100vh;
+}
+
+.infoSection.open .infoDesc {
    width: 60%;
    font-size: 2em;
    text-align: center;
@@ -847,14 +852,12 @@ label::before {
    display: none !important;
 }
 
-/*
-review
-a[href*='//'] {
+a[href*='theage'], a[href*='fairfax'] {
    text-decoration: none !important;
    color: inherit !important;
    pointer-events: none !important;
 }
-*/
+
 
 .header-wrap {
    border-bottom: 45px solid #E5E5E5;
