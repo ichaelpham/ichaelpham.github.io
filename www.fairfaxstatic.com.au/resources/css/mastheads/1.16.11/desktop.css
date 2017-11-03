@@ -212,23 +212,18 @@ html body.noscroll {
    height: calc(100vh - 48px);
    color: white;
    z-index: 999;
-   transition: top 10s;
+   transition: top 0.5s;
+   background: #233F34;
    overflow-y: scroll;
 }
-/* REVIEW: make sure change the transitions back */
 
 .infoSection.open {
    top: 0;
    margin-top: 48px;
-   background: #233F34;
    transition: top 0.5s;
 }
 
 .infoSection .infoDesc {
-   top: -100vh;
-}
-
-.infoSection.open .infoDesc {
    width: 60%;
    font-size: 2em;
    text-align: center;
@@ -237,8 +232,23 @@ html body.noscroll {
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
-   /* REVIEW: changed hyperlink styling */
 }
+
+.infoSection.open .infoDesc {
+   transform: translate(-50%, -50%);
+}
+
+.infoDesc a {
+   color: white;
+   transition: color 0.5s;
+}
+
+.infoDesc a:hover {
+   color: #69A486;
+   text-decoration: none;
+   transition: color 0.5s;
+}
+
 
 .settings__slider {
    display: flex;
@@ -500,8 +510,7 @@ html body.noscroll {
 }
 
 .reader__body figure img.imgBorder {
-   border: 15px solid #BDBDC2;
-   /* REVIEW: change this to light green */
+   border: 15px solid #69A486;;
 }
 
 .reader__body figcaption:first-child {
@@ -15468,10 +15477,10 @@ select.live__sort:focus {
       flex-basis: 100%;
    }
 
-   .infoDesc {
+   .infoSection.open .infoDesc {
       width: 100%;
-      padding-left: 8vw;
-      padding-right: 8vw;
+      padding-left: 4vw;
+      padding-right: 4vw;
       top: 15%;
       transform: translate(-50%, 0%);
       text-align: left;
