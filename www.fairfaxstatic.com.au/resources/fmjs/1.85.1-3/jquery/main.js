@@ -41,6 +41,14 @@ $(document).ready(function() {
       return false;
    });
 
+   /** checknight **/
+   function checkNight() {
+      if ($('.reader__container').hasClass('nightowl') && $('.reader__container').hasClass('open')) {
+         $('.settings__modal__nav').toggleClass('reader');
+         $('.settings__modal__nav').toggleClass('info');
+      }
+   }
+
    function classSwitch() {
       positionQuestion = 1;
       $('.temp').toggleClass('open');
@@ -55,6 +63,7 @@ $(document).ready(function() {
       $('.reader__container').toggleClass('open');
       $('.topPage').toggleClass('open');
       $('.reader__wrap').toggleClass('open');
+      checkNight();
       $('html body').toggleClass('noscroll');
    }
 
@@ -150,6 +159,7 @@ $(document).ready(function() {
     }
    });
 
+   /** Check if statements */
    /** radio input value becomes class name **/
    $(".question input").click(function() {
          var val = $('input[name=survey]:checked').val();
@@ -158,17 +168,18 @@ $(document).ready(function() {
 
          $('.valList').append('<span>' + val + '</span>');
 
-         if (val === "night owl" || val === "mozart") {
+         if (val === "nightowl" || val === "mozart") {
             $('.reader__container').toggleClass(val);
             $('.reader__comments').toggleClass(val);
       }  else if (val === "upsize") {
+         /** Review sizes **/
             $('.reader__body').toggleClass(val);
             $('.reader__comments').toggleClass(val);
       }  else if (val === "beautiful") {
+         /** Review security teag and color **/
             $('.reader__body header > h1').text("Turnbull government to push states to hand over all drivers' licences's: Whats the Worst That Could Happen?");
             $('.readerSubject').text('Security').addClass('security')
       }  else if (val === "power") {
-            /** add more text **/
             $('.reader__body .hack').after("<p>Mr Turnbull dismissed concerns that such a vast identity database would be vulnerable to hacking. This is despite 2016 Census hacks that exposed numerous vulnerabilities.</p>");
             $('.reader__body .hackQuote').after("<p class='readerQuote'>Mr Turnbull dismissed concerns that such a vast identity database would be vulnerable to hacking. This is despite 2016 Census hacks that exposed numerous vulnerabilities..</p>");
       }  else if (val === "interested") {
@@ -212,7 +223,6 @@ $(document).ready(function() {
          return false;
       }
    });
-
 
    /** Email validation for form **/
    function validateEmail(email) {

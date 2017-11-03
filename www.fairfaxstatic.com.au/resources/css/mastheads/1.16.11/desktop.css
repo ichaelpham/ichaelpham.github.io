@@ -713,7 +713,7 @@ html body.noscroll {
    background-repeat: no-repeat;
    background-position: 96% 50%;
    background-size: 20px 20px;
-   border-color: #69A486;;
+   border-color: #69A486;
 }
 
 .nameForm.reUseWrong {
@@ -801,15 +801,27 @@ html body.noscroll {
 
 /* REVIEW:  */
 /** Night Mode **/
-.reader__container.open.night .reader__body,
+/* REVIEW:  *//* REVIEW:  */
+.reader__container.open.nightowl .reader__body,
 .reader__comments.night,
-.reader__comments__list.night,
-.text__exit.night {
+.reader__comments__list.nightowl {
    color: white;
 }
 
-.reader__container.night, .text__exit.night {
-   background: #BDBDC2;
+.settings__modal__nav.open.nightowl {
+   background: #233F34;
+}
+
+.reader__container.nightowl {
+   background: #233F34;
+}
+
+.reader__container.nightowl .reader__body figcaption {
+   color: #C7C7C7;
+}
+
+.reader__body header .name::after {
+   color: white;
 }
 
 .reader__comments.night header {
@@ -15421,6 +15433,18 @@ select.live__sort:focus {
    .wrap,
    .article__header h1 {
       width: 100%;
+   }
+
+   .logo-wrap {
+      padding-left: 40px;
+   }
+
+   .content.wrap.grid {
+      padding-left: 25px;
+   }
+
+   .article.article {
+      padding-left: 0;
    }
 
    .article__body > p {
