@@ -1,4 +1,20 @@
+/** created by
+
+
+ /$$      /$$ /$$           /$$                           /$$       /$$$$$$$  /$$
+| $$$    /$$$|__/          | $$                          | $$      | $$__  $$| $$
+| $$$$  /$$$$ /$$  /$$$$$$$| $$$$$$$   /$$$$$$   /$$$$$$ | $$      | $$  \ $$| $$$$$$$   /$$$$$$  /$$$$$$/$$$$
+| $$ $$/$$ $$| $$ /$$_____/| $$__  $$ |____  $$ /$$__  $$| $$      | $$$$$$$/| $$__  $$ |____  $$| $$_  $$_  $$
+| $$  $$$| $$| $$| $$      | $$  \ $$  /$$$$$$$| $$$$$$$$| $$      | $$____/ | $$  \ $$  /$$$$$$$| $$ \ $$ \ $$
+| $$\  $ | $$| $$| $$      | $$  | $$ /$$__  $$| $$_____/| $$      | $$      | $$  | $$ /$$__  $$| $$ | $$ | $$
+| $$ \/  | $$| $$|  $$$$$$$| $$  | $$|  $$$$$$$|  $$$$$$$| $$      | $$      | $$  | $$|  $$$$$$$| $$ | $$ | $$
+|__/     |__/|__/ \_______/|__/  |__/ \_______/ \_______/|__/      |__/      |__/  |__/ \_______/|__/ |__/ |__/
+
+
+**/
+
 /** Typefaces **/
+@import url('https://fonts.googleapis.com/css?family=Pt+Serif:400,700');
 @font-face {
   font-family: 'Neuzeit book';
   src: url('../../../fonts/neuzeit-book.eot.eot');
@@ -6,8 +22,6 @@
        url('../../../fonts/neuzeit-book.woff') format('woff'),
        url('../../../fonts/neuzeit-book.ttf')  format('truetype');
 }
-
-@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,700');
 
 .loader {
    top: 0;
@@ -499,6 +513,7 @@ html body.noscroll {
    display: block;
    padding: 1em 0 0 0;
    font-size: 0.8em;
+   font-family: 'Pt Serif', georgia, serif;
 }
 
 .credits {
@@ -519,6 +534,7 @@ html body.noscroll {
 
 .reader__body figcaption .sub {
    color: #69A486;
+   font-family: 'Neuzeit Book', arial, helvetica, sans-serif;
 }
 
 .heroImg {
@@ -561,6 +577,7 @@ html body.noscroll {
    flex-basis: 75%;
    display: flex;
    margin: 0 20px 0 0;
+   font-family: 'Neuzeit', Arial, Helvetica, sans-serif;
 }
 
 .readerForm {
@@ -611,6 +628,7 @@ html body.noscroll {
    margin-top: 0;
    color: white;
    transition: color 0.5s;
+   font-family: 'Neuzeit', Arial, Helvetica, sans-serif;
 }
 
 #emailBtn p {
@@ -641,6 +659,7 @@ html body.noscroll {
    color: #8B8B8B;
    background: #E5E5E5;
    border-radius: 2.5px;
+   font-family: 'Neuzeit', Arial, Helvetica, sans-serif;
 }
 
 .reader__comments {
@@ -659,6 +678,7 @@ html body.noscroll {
 .reader__comments__list .author__details {
    margin-top: 1.5em;
    font-size: 0.8em;
+   font-family: 'Neuzeit book', Arial, Helvetica, sans-serif;
 }
 
 .author__details .name::after {
@@ -691,6 +711,7 @@ html body.noscroll {
 
 .commentWrap form {
    flex: 1 100%;
+   font-family: 'Neuzeit', Arial, Helvetica, sans-serif;
 }
 
 .commentWrap form input.closed, .commentForm.closed {
@@ -799,34 +820,77 @@ html body.noscroll {
    transition: transform 0.5s;
 }
 
-/* REVIEW:  */
 /** Night Mode **/
-/* REVIEW:  *//* REVIEW:  */
 .reader__container.open.nightowl .reader__body,
-.reader__comments.night,
+.reader__container.open.nightowl .name::after,
+.reader__comments.nightowl,
 .reader__comments__list.nightowl {
    color: white;
 }
 
-.settings__modal__nav.open.nightowl {
+.reader__container.nightowl .valList span {
+   background: #557166;
+   color: #233F34;
+}
+
+.settings__modal__nav.open.nightowl,
+.settings__modal__nav.open.nightowl .logoNew p,
+.settings__modal__nav.open.nightowl .st0,
+.settings__modal__nav.open.nightowl .aboutOuter{
    background: #233F34;
+   fill: white;
+   color: white;
 }
 
 .reader__container.nightowl {
    background: #233F34;
 }
 
-.reader__container.nightowl .reader__body figcaption {
-   color: #C7C7C7;
+.reader__container.nightowl .heroImg {
+   border-top: 5px solid white;
+   border-bottom: 1px solid white;
 }
 
-.reader__body header .name::after {
-   color: white;
+.reader__container.nightowl .subBox {
+   border-bottom: 1px solid white;
+   border-top: 5px solid white;
 }
 
-.reader__comments.night header {
-   border-bottom: 0.5px solid white;
+.reader__container.nightowl .reader__body header {
+   border-bottom: 1px solid white;
 }
+
+.reader__container.nightowl .readerQuote {
+   border-left: 5px solid white;
+}
+
+.reader__container.nightowl .reader__body figcaption,
+.reader__container.nightowl .reader__body .disclaimer {
+   color: #E5E5E5;
+}
+
+.reader__container.nightowl .reader__comments header{
+   border-bottom: 5px solid white;
+}
+
+.topPage.open.nightowl {
+   border-top: 1px solid white;
+}
+
+/** mozart / serif mode **/
+.reader__comments.mozart,
+.reader__wrap.mozart {
+   font-family: 'Pt Serif', georgia, serif;
+}
+
+.reader__wrap.mozart .reader__body .sub,
+.reader__wrap.mozart .reader__body .readerSubject,
+.reader__wrap.mozart .reader__body .author__details,
+.reader__wrap.mozart .reader__body figcaption,
+.reader__wrap.mozart .reader__body .subBox p {
+   font-family: 'Neuzeit', Arial, Helvetica, sans-serif;
+}
+
 
 /** Big mode **/
 .reader__body.bigType, .reader__comments.bigType {
@@ -15431,6 +15495,7 @@ select.live__sort:focus {
    .article__toolbar,
    .article__toolbar,
    .wrap,
+   .article__body .media--portrait-photo,
    .article__header h1 {
       width: 100%;
    }
@@ -15453,6 +15518,10 @@ select.live__sort:focus {
 
    .header-wrap {
       min-width: 0;
+   }
+
+   .article__body .media--portrait-photo {
+      margin-left: 0;
    }
 
    .question label {

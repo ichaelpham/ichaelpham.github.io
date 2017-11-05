@@ -44,8 +44,7 @@ $(document).ready(function() {
    /** checknight **/
    function checkNight() {
       if ($('.reader__container').hasClass('nightowl') && $('.reader__container').hasClass('open')) {
-         $('.settings__modal__nav').toggleClass('reader');
-         $('.settings__modal__nav').toggleClass('info');
+         $('.settings__modal__nav').toggleClass('nightowl');
       }
    }
 
@@ -74,12 +73,7 @@ $(document).ready(function() {
    }
 
    function removeAll(){
-      $('.temp').removeClass('open');
-      $('.infoSection').removeClass('open');
-      $('.settings__modal__nav').removeClass('open info');
-      $('.modal__wrapper').removeClass('open');
-      $('.reader__container').removeClass('open');
-      $('html body').removeClass('noscroll');
+      location.reload(true);
    }
 
    /** Check if statements */
@@ -142,7 +136,6 @@ $(document).ready(function() {
 
    /** Cancel **/
    $('.back').click(function() {
-      posReset()
       removeAll();
    });
 
@@ -168,19 +161,23 @@ $(document).ready(function() {
 
          $('.valList').append('<span>' + val + '</span>');
 
-         if (val === "nightowl" || val === "mozart") {
+         if (val === "nightowl") {
             $('.reader__container').toggleClass(val);
             $('.reader__comments').toggleClass(val);
+            $('.topPage').toggleClass(val);
+      }  else if (val === "mozart") {
+            $('.reader__comments').toggleClass(val);
+            $('.reader__wrap').toggleClass(val);
       }  else if (val === "upsize") {
          /** Review sizes **/
             $('.reader__body').toggleClass(val);
             $('.reader__comments').toggleClass(val);
       }  else if (val === "beautiful") {
-         /** Review security teag and color **/
+         /** Review security tag and color **/
             $('.reader__body header > h1').text("Turnbull government to push states to hand over all drivers' licences's: Whats the Worst That Could Happen?");
             $('.readerSubject').text('Security').addClass('security')
       }  else if (val === "power") {
-            $('.reader__body .hack').after("<p>Mr Turnbull dismissed concerns that such a vast identity database would be vulnerable to hacking. This is despite 2016 Census hacks that exposed numerous vulnerabilities.</p>");
+            $('.reader__body .hack').text("Mr Turnbull dismissed concerns that such a vast identity database would be vulnerable to hacking. This is despite 2016 Census hacks that exposed numerous vulnerabilities.");
             $('.reader__body .hackQuote').after("<p class='readerQuote'>Mr Turnbull dismissed concerns that such a vast identity database would be vulnerable to hacking. This is despite 2016 Census hacks that exposed numerous vulnerabilities..</p>");
       }  else if (val === "interested") {
             $('.reader__comments header span:first-child').after('<span>The comments are now closed.</span>');
@@ -189,34 +186,19 @@ $(document).ready(function() {
             $('.commentForm').prop( "readonly", true );
             $('.commentForm').toggleClass('closed');
             $('.readerBtn').prop("disabled", true);
-      }  else if (val === "curated") {
-         /** change all figcaption **/
-         /** consider changing all of these **/
-            $('.reader__body figure:nth-of-type(1) img').attr('src', 'www.fairfaxstatic.com.au/content/dam/images/swap/1984.jpg');
-            $('.reader__body figure:nth-of-type(2) img').attr('src', 'www.fairfaxstatic.com.au/content/dam/images/swap/camera.jpeg');
-            /** review abover ^^ change dimensions **/
-            $('.reader__body figure:nth-of-type(2) figcaption').text('test');
-            $('.reader__body figure:nth-of-type(3) img').attr('src', 'www.fairfaxstatic.com.au/content/dam/images/swap/FacialRecLoop02-theintercept.gif');
-            $('.reader__body figure:nth-of-type(3) figcaption').text('test');
-            $('.reader__body figure:nth-of-type(5) img').attr('src', 'www.fairfaxstatic.com.au/content/dam/images/swap/1984.jpg');
-            $('.reader__body figure:nth-of-type(4) figcaption').text('test');
-            $('.reader__body figure:nth-of-type(5) figcaption').text('test');
-      }  else if (val === "honest") {
-            /** change this to 'realistic' **/
+      }  else if (val === "realistic") {
             /** change all images **/
-            $('.reader__body figure:nth-of-type(1) img').attr('src', 'www.fairfaxstatic.com.au/content/dam/images/swap/FacialRecLoop02-theintercept.gif');
-            $('.reader__body figure:nth-of-type(1) figcaption').text('test');
-            $('.reader__body figure:nth-of-type(2) img').attr('src', 'www.fairfaxstatic.com.au/content/dam/images/swap/faceswap.png');
-            /** review abover ^^ change dimensions **/
-            $('.reader__body figure:nth-of-type(2) figcaption').text('test');
+            $('.reader__body figure:nth-of-type(1) img').attr('src', 'www.fairfaxstatic.com.au/content/dam/images/swap/denver-surveillance-article-1000x663.jpg');
+            $('.reader__body figure:nth-of-type(2) img').attr('src', 'www.fairfaxstatic.com.au/content/dam/images/swap/FacialRecLoop02-theintercept.gif');
+            $('.reader__body figure:nth-of-type(2) figcaption').html("The CCTV-linked ‘privacy-invasive’ iOmniscient behavioural recognition software is ‘straight out of 1984’, civil libertarians say. <span class='credits'>Photo: Jason South</span>");
             $('.reader__body figure:nth-of-type(3) img').attr('src', 'www.fairfaxstatic.com.au/content/dam/images/swap/1020.png');
-            $('.reader__body figure:nth-of-type(3) figcaption').text('test');
-            $('.reader__body figure:nth-of-type(4) img').attr('src', 'www.fairfaxstatic.com.au/content/dam/images/swap/1984.jpg');
-            $('.reader__body figure:nth-of-type(4) figcaption').text('test');
-            $('.reader__body figure:nth-of-type(5) img').attr('src', 'www.fairfaxstatic.com.au/content/dam/images/swap/camera.jpeg');
-            $('.reader__body figure:nth-of-type(5) figcaption').text('test');
+            // REVIEW: change figcaption
+            /** NOTE: make them look evil figure 4 **/
+            $('.reader__body figure:nth-of-type(5) img').attr('src', 'www.fairfaxstatic.com.au/content/dam/images/swap/cam-photo-cameras-inside-police-4.jpg');
+            // REVIEW: change figcaption
+            $('.reader__body figure:nth-of-type(6) img').attr('src', 'www.fairfaxstatic.com.au/content/dam/images/swap/facial-recognition-3-article-1000x663.jpg');
       }  else if (val === "exciting") {
-      }  else if (val === "imgFadeout") {
+      }  else if (val === "Subjective") {
       }  else if (val === "less" || val === "more") {
             $('.reader__body figure img').toggleClass(val);
       }  else  {
