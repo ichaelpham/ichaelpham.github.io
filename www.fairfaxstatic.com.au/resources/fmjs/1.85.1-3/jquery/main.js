@@ -41,6 +41,26 @@ $(document).ready(function() {
       return false;
    });
 
+   /*
+   function scrollProgress() {
+      var winHeight = $('.progWindow').height(),
+      docHeight = $('.reader__wrap.open').height(),
+      footHeight = $('.topPage').height(),
+      totalHeight = docHeight + footHeight,
+      progressBar = $('progress'),
+      max, value;
+
+      max = totalHeight - winHeight;
+      progressBar.attr('max', max);
+
+      $('.reader__container').on('scroll', function() {
+        value = $('.reader__container').scrollTop();
+        console.log(value);
+        progressBar.attr('value', value);
+      });
+   }
+   */
+
    /** checknight **/
    function checkNight() {
       if ($('.reader__container').hasClass('nightowl') && $('.reader__container').hasClass('open')) {
@@ -64,6 +84,7 @@ $(document).ready(function() {
       $('.reader__wrap').toggleClass('open');
       checkNight();
       $('html body').toggleClass('noscroll');
+      /* scrollProgress(); */
    }
 
    function posReset() {
@@ -152,34 +173,36 @@ $(document).ready(function() {
     }
    });
 
-   /** Check if statements */
    /** radio input value becomes class name **/
    $(".question input").click(function() {
          var val = $('input[name=survey]:checked').val();
          var readerON = $('.reader__body').hasClass('open');
          var settingsON = $('.settings__modal').hasClass('open');
 
+         /** this ads value tags at the end of reader **/
          $('.valList').append('<span>' + val + '</span>');
 
          if (val === "nightowl") {
+            /** bg change **/
             $('.reader__container').toggleClass(val);
             $('.reader__comments').toggleClass(val);
             $('.topPage').toggleClass(val);
       }  else if (val === "mozart") {
+            /** typeface change **/
             $('.reader__comments').toggleClass(val);
             $('.reader__wrap').toggleClass(val);
       }  else if (val === "upsize") {
-         /** Review sizes **/
+            /** Review sizes **/
             $('.reader__body').toggleClass(val);
             $('.reader__comments').toggleClass(val);
       }  else if (val === "beautiful") {
-         /** Review security tag and color **/
             $('.reader__body header > h1').text("Turnbull government to push states to hand over all drivers' licences's: Whats the Worst That Could Happen?");
             $('.readerSubject').text('Security').addClass('security')
       }  else if (val === "power") {
             $('.reader__body .hack').text("Mr Turnbull dismissed concerns that such a vast identity database would be vulnerable to hacking. This is despite 2016 Census hacks that exposed numerous vulnerabilities.");
             $('.reader__body .hackQuote').after("<p class='readerQuote'>Mr Turnbull dismissed concerns that such a vast identity database would be vulnerable to hacking. This is despite 2016 Census hacks that exposed numerous vulnerabilities..</p>");
       }  else if (val === "interested") {
+            /** Closes comments section **/
             $('.reader__comments header span:first-child').after('<span>The comments are now closed.</span>');
             $('.commentWrap form input').prop( "readonly", true );
             $('.commentWrap form input').toggleClass('closed');
@@ -188,19 +211,23 @@ $(document).ready(function() {
             $('.readerBtn').prop("disabled", true);
       }  else if (val === "realistic") {
             /** change all images **/
-            $('.reader__body figure:nth-of-type(1) img').attr('src', 'www.fairfaxstatic.com.au/content/dam/images/swap/denver-surveillance-article-1000x663.jpg');
+            $('.reader__body figure:nth-of-type(1) img').attr('src', 'www.fairfaxstatic.com.au/content/dam/images/swap/angola-prison-louisiana-article-header.jpg');
             $('.reader__body figure:nth-of-type(2) img').attr('src', 'www.fairfaxstatic.com.au/content/dam/images/swap/FacialRecLoop02-theintercept.gif');
             $('.reader__body figure:nth-of-type(2) figcaption').html("The CCTV-linked ‘privacy-invasive’ iOmniscient behavioural recognition software is ‘straight out of 1984’, civil libertarians say. <span class='credits'>Photo: Jason South</span>");
             $('.reader__body figure:nth-of-type(3) img').attr('src', 'www.fairfaxstatic.com.au/content/dam/images/swap/1020.png');
-            // REVIEW: change figcaption
-            /** NOTE: make them look evil figure 4 **/
+            $('.reader__body figure:nth-of-type(3) figcaption').html("CV Dazzle is designed to keep facial recognition systems from detecting your face at all. <span class='credits'>Photo: CV Dazzle</span>");
+            $('.reader__body figure:nth-of-type(4) img').attr('src', 'www.fairfaxstatic.com.au/content/dam/images/swap/juvenile-jail1-article-header.jpg');
             $('.reader__body figure:nth-of-type(5) img').attr('src', 'www.fairfaxstatic.com.au/content/dam/images/swap/cam-photo-cameras-inside-police-4.jpg');
-            // REVIEW: change figcaption
+            $('.reader__body figure:nth-of-type(5) figcaption').html("CCTV analysis mostly relies on teams of specially trained officers watching thousands of hours of footage. <span class='credits'>Photo: Jack Taylor/AFP/Getty Images</span>");
             $('.reader__body figure:nth-of-type(6) img').attr('src', 'www.fairfaxstatic.com.au/content/dam/images/swap/facial-recognition-3-article-1000x663.jpg');
-      }  else if (val === "exciting") {
-      }  else if (val === "Subjective") {
+      }  else if (val === "vital") {
+            
+      }  else if (val === "subjective") {
+            /** makes text editable **/
+            $('.reader__wrap p').attr('contenteditable','true');
       }  else if (val === "less" || val === "more") {
-            $('.reader__body figure img').toggleClass(val);
+            /** Changes mouse treatment **/
+
       }  else  {
          return false;
       }

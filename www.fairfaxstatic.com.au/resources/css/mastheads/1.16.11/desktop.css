@@ -75,7 +75,6 @@ html body.noscroll {
    transition: top 0.5s;
    transition: background 0.5s;
    font-family: 'Neuzeit book', Arial, Helvetica, sans-serif;
-   /* REVIEW: border */
 }
 
 .settings__modal__nav div {
@@ -818,6 +817,10 @@ html body.noscroll {
 .topPage:hover p {
    transform: translateY(-0.5vh);
    transition: transform 0.5s;
+}
+
+.banner ul li {
+   display: inline-block;
 }
 
 /** Night Mode **/
