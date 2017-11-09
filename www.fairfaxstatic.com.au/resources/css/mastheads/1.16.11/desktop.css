@@ -135,7 +135,6 @@ html body.noscroll {
    transition: transform 0.5s;
 }
 
-
 /** customIcons interactions **/
 .settings:hover .knobLeft {
    x: 25.3;
@@ -417,6 +416,12 @@ html body.noscroll {
    color: #233F34;
    font-family: 'Neuzeit book', Arial, Helvetica, sans-serif;
    top: 0;
+}
+
+.reader__wrap.open p:focus {
+   border: 0px solid transparent;
+   outline: 0px solid transparent;
+   text-decoration: underline;
 }
 
 .reader__body {
@@ -819,8 +824,27 @@ html body.noscroll {
    transition: transform 0.5s;
 }
 
-.banner ul li {
-   display: inline-block;
+.marquee{
+   text-align: center;
+   padding: 20px;
+   margin: auto;
+   position: relative;
+   overflow: hidden;
+   background: white;
+   height: 88px;
+   max-width: 100%;
+   z-index: 999;
+}
+
+.marquee ul li{
+   bottom: 0;
+   left: 0;
+   position: fixed;
+   line-height: 88px;
+   list-style: none;
+   color: #233F34;
+   font-size: 1.15em;
+   font-family: 'Neuzeit Book', Arial, Helvetica, sans-serif;
 }
 
 /** Night Mode **/
@@ -894,17 +918,54 @@ html body.noscroll {
    font-family: 'Neuzeit', Arial, Helvetica, sans-serif;
 }
 
+.reader__body figure img.subjective {
+   filter: grayscale(100%);
+}
 
-/** Big mode **/
-.reader__body.bigType, .reader__comments.bigType {
-   /* REVIEW:  */
-   font-size: 1.2em;
-   width: 45%;
+.reader__body figure img.subjective:hover {
+   filter: grayscale(0);
+   transition: all 0.5s;
 }
 
 
-/** Overides resets the base */
-/** Hide these */
+.vital {
+   display: none;
+}
+
+#twitter-widget-0 {
+   display: none !important;
+   margin-top: 1.5em !important;
+}
+
+#twitter-widget-1 {
+   display: none !important;
+   margin-top: 0 !important;
+   margin-bottom: 0 !important;
+}
+
+.vital.open,
+#twitter-widget-0.open,
+#twitter-widget-1.open {
+   display: inline-block !important;
+}
+
+/** Big mode **/
+.reader__wrap.upsize {
+   font-size: 1.5em;
+   width: 83%;
+}
+
+.reader__body.more .dropCap {
+  float: left;
+  font-size: 2.6em;
+  line-height: 1em;
+  padding-right: 0.4em;
+  padding-top: 0.15em;
+  padding-left: 0.15em;
+  /** add more stuff for css **/
+}
+
+/** do more for images **/
 
 .main-frame-error,
 .is_fm-mymasthead-favourite,
@@ -929,7 +990,6 @@ html body.noscroll {
 .footer__bottom ul,
 .footer__bottom .btn,
 .grid>.grid,
-iframe,
 #navigation-toggle,
 .panel .panel--video-playlist,
 .aside--main {

@@ -192,15 +192,13 @@ $(document).ready(function() {
             $('.reader__comments').toggleClass(val);
             $('.reader__wrap').toggleClass(val);
       }  else if (val === "upsize") {
-            /** Review sizes **/
-            $('.reader__body').toggleClass(val);
-            $('.reader__comments').toggleClass(val);
+            $('.reader__wrap').toggleClass(val);
       }  else if (val === "beautiful") {
             $('.reader__body header > h1').text("Turnbull government to push states to hand over all drivers' licences's: Whats the Worst That Could Happen?");
             $('.readerSubject').text('Security').addClass('security')
       }  else if (val === "power") {
-            $('.reader__body .hack').text("Mr Turnbull dismissed concerns that such a vast identity database would be vulnerable to hacking. This is despite 2016 Census hacks that exposed numerous vulnerabilities.");
-            $('.reader__body .hackQuote').after("<p class='readerQuote'>Mr Turnbull dismissed concerns that such a vast identity database would be vulnerable to hacking. This is despite 2016 Census hacks that exposed numerous vulnerabilities..</p>");
+            $('.reader__body .hack').text("'The public need to be able to trust that governments can adequately house and protect this information,' Tim Singleton Norton, chair of Digital Rights Watch, said in a statement.' We have seen breaches from agencies such as the Australian Federal Police, the Department of Immigration and Border Protection or the Australian Bureau of Statistics, to name just a few. This should make it very clear that this government is ill-equipped to properly protect citizen's data.' Mr Turnbull dismissed concerns that such a vast identity database would be vulnerable to hacking.");
+            $('.reader__body .hackQuote').after("<p class='readerQuote'>We have seen breaches from agencies such as the Australian Federal Police, the Department of Immigration and Border Protection or the Australian Bureau of Statistics, to name just a few. This should make it very clear that this government is ill-equipped to properly protect citizen's data...</p>");
       }  else if (val === "interested") {
             /** Closes comments section **/
             $('.reader__comments header span:first-child').after('<span>The comments are now closed.</span>');
@@ -208,7 +206,7 @@ $(document).ready(function() {
             $('.commentWrap form input').toggleClass('closed');
             $('.commentForm').prop( "readonly", true );
             $('.commentForm').toggleClass('closed');
-            $('.readerBtn').prop("disabled", true);
+            $('#commentBtn').prop("disabled", true);
       }  else if (val === "realistic") {
             /** change all images **/
             $('.reader__body figure:nth-of-type(1) img').attr('src', 'www.fairfaxstatic.com.au/content/dam/images/swap/angola-prison-louisiana-article-header.jpg');
@@ -221,13 +219,13 @@ $(document).ready(function() {
             $('.reader__body figure:nth-of-type(5) figcaption').html("CCTV analysis mostly relies on teams of specially trained officers watching thousands of hours of footage. <span class='credits'>Photo: Jack Taylor/AFP/Getty Images</span>");
             $('.reader__body figure:nth-of-type(6) img').attr('src', 'www.fairfaxstatic.com.au/content/dam/images/swap/facial-recognition-3-article-1000x663.jpg');
       }  else if (val === "vital") {
-            
+            $('.vital').toggleClass('open');
+            $('#twitter-widget-0').toggleClass('open');
+            $('#twitter-widget-1').toggleClass('open');
       }  else if (val === "subjective") {
-            /** makes text editable **/
-            $('.reader__wrap p').attr('contenteditable','true');
+            $('.reader__body figure img').toggleClass(val);
       }  else if (val === "less" || val === "more") {
-            /** Changes mouse treatment **/
-
+            $('.reader__body').toggleClass(val);
       }  else  {
          return false;
       }
