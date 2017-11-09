@@ -15650,27 +15650,41 @@ select.live__sort:focus {
       height: 60px;
    }
 
-
    .settings__modal__nav div {
-      height: inherit;
       line-height: 60px;
    }
 
-   .settings {
-      padding-left: 12px;
-   }
-
-   .about {
-      text-align: center;
-      padding-right: 12px;
-   }
-
    .logoNew p {
-      font-size: 1.25em;
-      color: white;
+      font-size: 1.5em;
    }
 
    .helper {
       width: 36px;
+   }
+
+   .question__heading {
+      margin: 60px auto 0 auto;
+      height: 120px;
+   }
+
+   .question__heading p {
+      line-height: 120px;
+      font-size: 1.5em;
+   }
+
+   .question label {
+      height: calc(100vh - 180px);
+   }
+
+   .question label span {
+      font-size: 1.5em;
+   }
+
+   .question label h1 {
+      font-size: 3em;
+   }
+
+   .back, .skip {
+      font-size: 1.5em;
    }
 }
