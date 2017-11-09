@@ -15642,3 +15642,34 @@ select.live__sort:focus {
       text-align: left;
    }
 }
+
+@media screen and (min-width: 1400px) {
+   .settings__modal__nav {
+      margin-left: -300px;
+      width: 450px;
+      height: 72px;
+   }
+
+
+   .settings__modal__nav div {
+      height: inherit;
+      line-height: 72px;
+   }
+
+   .settings {
+      padding-left: 12px;
+   }
+
+   .about {
+      text-align: center;
+      padding-right: 12px;
+   }
+
+   .logoNew p {
+      font-size: 1.75em;
+   }
+
+   .helper {
+      width: 36px;
+   }
+}
