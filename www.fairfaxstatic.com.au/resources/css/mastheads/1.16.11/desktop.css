@@ -15645,15 +15645,15 @@ select.live__sort:focus {
 
 @media screen and (min-width: 1400px) {
    .settings__modal__nav {
-      margin-left: -200px;
-      width: 400px;
-      height: 72px;
+      margin-left: -187.5px;
+      width: 375px;
+      height: 60px;
    }
 
 
    .settings__modal__nav div {
       height: inherit;
-      line-height: 72px;
+      line-height: 60px;
    }
 
    .settings {
