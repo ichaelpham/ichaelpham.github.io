@@ -221,7 +221,7 @@ html body.noscroll {
    top: -100vh;
    position: fixed;
    width: 100vw;
-   height: calc(100vh - 48px);
+   height: 100vh;
    color: white;
    z-index: 999;
    transition: top 0.5s;
@@ -231,8 +231,9 @@ html body.noscroll {
 
 .infoSection.open {
    top: 0;
-   margin-top: 48px;
+   margin-top: 0px;
    transition: top 0.5s;
+   z-index: 500;
 }
 
 .infoSection .infoDesc {
@@ -505,7 +506,7 @@ html body.noscroll {
 
 .reader__body figure img {
    display: inline-block;
-   max-width: 100%;
+   width: 100%;
    margin: 0 auto;
    vertical-align: top;
 }
@@ -15649,6 +15650,7 @@ select.live__sort:focus {
       width: 375px;
       height: 60px;
       border-radius: 4px;
+      background: red;
    }
 
    .settings__modal__nav div {
@@ -15690,6 +15692,16 @@ select.live__sort:focus {
    }
 
    .skip {
+      font-size: 2.5em;
+   }
+
+   .reader__wrap.open {
+      font-size: 1.5em;
+      width: 55%;
+   }
+
+   .infoSection .infoDesc {
+      width: 60%;
       font-size: 2.5em;
    }
 }
