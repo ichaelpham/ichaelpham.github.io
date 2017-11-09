@@ -15648,6 +15648,7 @@ select.live__sort:focus {
       margin-left: -187.5px;
       width: 375px;
       height: 60px;
+      border-radius: 4px;
    }
 
    .settings__modal__nav div {
@@ -15659,7 +15660,7 @@ select.live__sort:focus {
    }
 
    .helper {
-      width: 36px;
+      width: 30px;
    }
 
    .question__heading {
@@ -15684,7 +15685,11 @@ select.live__sort:focus {
       font-size: 3em;
    }
 
-   .back, .skip {
+   .back {
       font-size: 1.5em;
+   }
+
+   .skip {
+      font-size: 2.5em;
    }
 }
