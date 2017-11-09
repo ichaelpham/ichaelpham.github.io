@@ -15645,7 +15645,7 @@ select.live__sort:focus {
 
 @media screen and (min-width: 1400px) {
    .settings__modal__nav {
-      margin-left: -300px;
+      margin-left: -200px;
       width: 400px;
       height: 72px;
    }
