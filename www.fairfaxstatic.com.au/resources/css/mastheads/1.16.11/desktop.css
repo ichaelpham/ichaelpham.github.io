@@ -15646,7 +15646,7 @@ select.live__sort:focus {
 @media screen and (min-width: 1400px) {
    .settings__modal__nav {
       margin-left: -300px;
-      width: 450px;
+      width: 400px;
       height: 72px;
    }
 
@@ -15666,7 +15666,8 @@ select.live__sort:focus {
    }
 
    .logoNew p {
-      font-size: 1.75em;
+      font-size: 1.25em;
+      color: white;
    }
 
    .helper {
