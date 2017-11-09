@@ -500,13 +500,13 @@ html body.noscroll {
 .reader__body figure {
    margin-top: 3em;
    margin-bottom: 0;
-   text-align: center;
+   text-align: left;
    padding: 0;
 }
 
 .reader__body figure img {
    display: inline-block;
-   width: 100%;
+   max-width: 100%;
    margin: 0 auto;
    vertical-align: top;
 }
