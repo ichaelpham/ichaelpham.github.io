@@ -238,7 +238,7 @@ html body.noscroll {
 
 .infoSection .infoDesc {
    width: 60%;
-   font-size: 2em;
+   font-size: 2.5em;
    text-align: center;
    color: white;
    position: absolute;
@@ -15662,7 +15662,7 @@ select.live__sort:focus {
    }
 
    .helper {
-      width: 30px;
+      width: 26px;
    }
 
    .question__heading {
@@ -15697,7 +15697,7 @@ select.live__sort:focus {
 
    .reader__wrap.open {
       font-size: 1.25em;
-      width: 65%;
+      width: 58%;
    }
 
    .infoSection .infoDesc {
