@@ -15647,14 +15647,14 @@ select.live__sort:focus {
 @media screen and (min-width: 1400px) {
    .settings__modal__nav {
       margin-left: -187.5px;
-      width: 375px;
-      height: 60px;
+      width: 325px;
+      height: 52px;
       border-radius: 4px;
       background: red;
    }
 
    .settings__modal__nav div {
-      line-height: 60px;
+      line-height: 52px;
    }
 
    .logoNew p {
@@ -15666,12 +15666,12 @@ select.live__sort:focus {
    }
 
    .question__heading {
-      margin: 60px auto 0 auto;
-      height: 120px;
+      margin: 52px auto 0 auto;
+      height: 156px;
    }
 
    .question__heading p {
-      line-height: 120px;
+      line-height: 156px;
       font-size: 1.5em;
    }
 
