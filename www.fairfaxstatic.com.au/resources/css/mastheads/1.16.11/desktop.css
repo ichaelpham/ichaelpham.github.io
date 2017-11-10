@@ -867,6 +867,7 @@ html body.noscroll {
 .settings__modal__nav.open.nightowl .st0,
 .settings__modal__nav.open.nightowl .aboutOuter{
    background: #233F34;
+   border-bottom: rgba(255,255,255,0.1);
    fill: white;
    color: white;
 }
@@ -15646,18 +15647,18 @@ select.live__sort:focus {
 
 @media screen and (min-width: 1400px) {
    .settings__modal__nav {
-      margin-left: -187.5px;
-      width: 400px;
-      height: 64px;
+      margin-left: -225px;
+      width: 450px;
+      height: 72px;
       border-radius: 4px;
    }
 
    .settings__modal__nav div {
-      line-height: 64px;
+      line-height: 72px;
    }
 
    .logoNew p {
-      font-size: 1.8em;
+      font-size: 2.16em;
    }
 
    .helper {
@@ -15665,52 +15666,52 @@ select.live__sort:focus {
    }
 
    .question__heading {
-      margin: 64px auto 0 auto;
-      height: 128px;
+      margin: 72px auto 0 auto;
+      height: 144px;
    }
 
    .question__heading p {
-      line-height: 128px;
-      font-size: 1.8em;
+      line-height: 144px;
+      font-size: 2.16em;
    }
 
    .question label {
-      height: calc(100vh - 192px);
+      height: calc(100vh - 216px);
    }
 
    .question label span {
-      font-size: 1.8em;
+      font-size: 2.16em;
    }
 
    .question label h1 {
-      font-size: 3em;
+      font-size: 3.6em;
    }
 
    .back {
-      font-size: 1.8em;
+      font-size: 2.16em;
    }
 
    .skip {
-      font-size: 2.4em;
+      font-size: 3em;
    }
 
    .reader__wrap.open {
-      font-size: 1.38em;
-      width: 58%;
+      font-size: 1.65em;
+      width: 55%;
    }
 
    .infoSection .infoDesc {
-      font-size: 1.5em;
+      font-size: 1.8em;
    }
 
    .reader__wrap.upsize {
-      font-size: 1.8em;
-      width: 83%;
+      font-size: 2.16em;
+      width: 65%;
    }
 
    .reader__body.upsize .dropCap {
      float: left;
-     font-size: 3.12em;
+     font-size: 3.75em;
      line-height: 1em;
      padding-right: 0.35em;
      padding-top: 0.1em;
