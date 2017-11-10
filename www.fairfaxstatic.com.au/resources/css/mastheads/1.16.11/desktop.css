@@ -15647,71 +15647,70 @@ select.live__sort:focus {
 @media screen and (min-width: 1400px) {
    .settings__modal__nav {
       margin-left: -187.5px;
-      width: 325px;
-      height: 52px;
+      width: 400px;
+      height: 64px;
       border-radius: 4px;
    }
 
    .settings__modal__nav div {
-      line-height: 52px;
+      line-height: 64px;
    }
 
    .logoNew p {
-      font-size: 1.35em;
+      font-size: 1.8em;
    }
 
    .helper {
-      width: 26px;
+      width: 30px;
    }
 
    .question__heading {
-      margin: 52px auto 0 auto;
-      height: 104px;
+      margin: 64px auto 0 auto;
+      height: 128px;
    }
 
    .question__heading p {
-      line-height: 104px;
-      font-size: 1.35em;
+      line-height: 128px;
+      font-size: 1.8em;
    }
 
    .question label {
-      height: calc(100vh - 156px);
+      height: calc(100vh - 192px);
    }
 
    .question label span {
-      font-size: 1.35em;
+      font-size: 1.8em;
    }
 
    .question label h1 {
-      font-size: 2.7em;
+      font-size: 3em;
    }
 
    .back {
-      font-size: 1.35em;
+      font-size: 1.8em;
    }
 
    .skip {
-      font-size: 2.16em;
+      font-size: 2.4em;
    }
 
    .reader__wrap.open {
-      font-size: 1.25em;
+      font-size: 1.38em;
       width: 58%;
    }
 
    .infoSection .infoDesc {
-      /* REVIEW:  */
-      font-size: 2.7em;
+      font-size: 1.5em;
    }
 
    .reader__wrap.upsize {
-      font-size: 1.95em;
+      font-size: 1.8em;
       width: 83%;
    }
 
    .reader__body.upsize .dropCap {
      float: left;
-     font-size: 5.85em;
+     font-size: 3.12em;
      line-height: 1em;
      padding-right: 0.35em;
      padding-top: 0.1em;
