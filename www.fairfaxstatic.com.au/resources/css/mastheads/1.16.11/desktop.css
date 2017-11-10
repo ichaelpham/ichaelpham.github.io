@@ -15658,7 +15658,7 @@ select.live__sort:focus {
    }
 
    .logoNew p {
-      font-size: 1.5em;
+      font-size: 1.35em;
    }
 
    .helper {
@@ -15672,7 +15672,7 @@ select.live__sort:focus {
 
    .question__heading p {
       line-height: 104px;
-      font-size: 1.5em;
+      font-size: 1.35em;
    }
 
    .question label {
@@ -15680,28 +15680,43 @@ select.live__sort:focus {
    }
 
    .question label span {
-      font-size: 1.5em;
+      font-size: 1.35em;
    }
 
    .question label h1 {
-      font-size: 3em;
+      font-size: 2.7em;
    }
 
    .back {
-      font-size: 1.5em;
+      font-size: 1.35em;
    }
 
    .skip {
-      font-size: 2.5em;
+      font-size: 2.16em;
    }
 
    .reader__wrap.open {
-      font-size: 1.5em;
+      font-size: 1.25em;
       width: 65%;
    }
 
    .infoSection .infoDesc {
       width: 60%;
-      font-size: 2.5em;
+      font-size: 3.5em;
+   }
+
+   .reader__wrap.upsize {
+      font-size: 1.95em;
+      width: 83%;
+   }
+
+   .reader__body.upsize .dropCap {
+     float: left;
+     font-size: 5.85em;
+     line-height: 1em;
+     padding-right: 0.4em;
+     padding-top: 0.15em;
+     padding-left: 0.15em;
+     /** add more stuff for css **/
    }
 }
