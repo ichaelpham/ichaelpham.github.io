@@ -75,6 +75,7 @@ html body.noscroll {
    transition: top 0.5s;
    transition: background 0.5s;
    font-family: 'Neuzeit book', Arial, Helvetica, sans-serif;
+   border-bottom: 1px solid rgba(35,63,52,0.1);
 }
 
 .settings__modal__nav div {
@@ -237,8 +238,8 @@ html body.noscroll {
 }
 
 .infoSection .infoDesc {
-   width: 60%;
-   font-size: 2.5em;
+   width: 40%;
+   font-size: 1.25em;
    text-align: center;
    color: white;
    position: absolute;
@@ -947,7 +948,7 @@ html body.noscroll {
 #vital.open,
 #twitter-widget-0.open,
 #twitter-widget-1.open {
-   display: inline-block !important;
+   display: block !important;
 }
 
 /** Big mode **/
@@ -1186,7 +1187,7 @@ summary {
 }
 
 body {
-    line-height: 1
+    line-height: 1;
 }
 
 ol,
@@ -15699,7 +15700,7 @@ select.live__sort:focus {
    }
 
    .infoSection .infoDesc {
-      width: 60%;
+      /* REVIEW:  */
       font-size: 2.7em;
    }
 
@@ -15712,9 +15713,9 @@ select.live__sort:focus {
      float: left;
      font-size: 5.85em;
      line-height: 1em;
-     padding-right: 0.4em;
-     padding-top: 0.15em;
-     padding-left: 0.15em;
+     padding-right: 0.35em;
+     padding-top: 0.1em;
+     padding-left: 0.1em;
      color: #69A486;
    }
 }
