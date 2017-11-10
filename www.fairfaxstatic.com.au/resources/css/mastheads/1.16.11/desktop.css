@@ -506,7 +506,7 @@ html body.noscroll {
 
 .reader__body figure img {
    display: inline-block;
-   max-width: 100%;
+   width: 100%;
    margin: 0 auto;
    vertical-align: top;
 }
