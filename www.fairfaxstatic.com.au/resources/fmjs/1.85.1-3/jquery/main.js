@@ -219,7 +219,7 @@ $(document).ready(function() {
             $('.reader__body figure:nth-of-type(5) figcaption').html("CCTV analysis mostly relies on teams of specially trained officers watching thousands of hours of footage. <span class='credits'>Photo: Jack Taylor/AFP/Getty Images</span>");
             $('.reader__body figure:nth-of-type(6) img').attr('src', 'www.fairfaxstatic.com.au/content/dam/images/swap/facial-recognition-3-article-1000x663.jpg');
       }  else if (val === "vital") {
-            $('.vital').toggleClass('open');
+            $('#vital').toggleClass('open');
             $('#twitter-widget-0').toggleClass('open');
             $('#twitter-widget-1').toggleClass('open');
       }  else if (val === "subjective") {

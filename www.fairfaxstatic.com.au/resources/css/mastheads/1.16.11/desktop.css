@@ -929,7 +929,7 @@ html body.noscroll {
 }
 
 
-.vital {
+#vital {
    display: none;
 }
 
@@ -944,7 +944,7 @@ html body.noscroll {
    margin-bottom: 0 !important;
 }
 
-.vital.open,
+#vital.open,
 #twitter-widget-0.open,
 #twitter-widget-1.open {
    display: inline-block !important;
@@ -967,7 +967,6 @@ html body.noscroll {
 }
 
 /** do more for images **/
-
 .main-frame-error,
 .is_fm-mymasthead-favourite,
 .article__reprints,
@@ -15650,7 +15649,6 @@ select.live__sort:focus {
       width: 325px;
       height: 52px;
       border-radius: 4px;
-      background: blue;
    }
 
    .settings__modal__nav div {
@@ -15717,6 +15715,6 @@ select.live__sort:focus {
      padding-right: 0.4em;
      padding-top: 0.15em;
      padding-left: 0.15em;
-     /** add more stuff for css **/
+     color: #69A486;
    }
 }
