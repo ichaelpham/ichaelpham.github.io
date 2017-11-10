@@ -15667,16 +15667,16 @@ select.live__sort:focus {
 
    .question__heading {
       margin: 52px auto 0 auto;
-      height: 156px;
+      height: 104px;
    }
 
    .question__heading p {
-      line-height: 156px;
+      line-height: 104px;
       font-size: 1.5em;
    }
 
    .question label {
-      height: calc(100vh - 180px);
+      height: calc(100vh - 156px);
    }
 
    .question label span {
