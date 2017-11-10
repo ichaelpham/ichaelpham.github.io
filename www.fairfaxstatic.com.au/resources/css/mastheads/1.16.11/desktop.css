@@ -956,7 +956,7 @@ html body.noscroll {
    width: 83%;
 }
 
-.reader__body.more .dropCap {
+.reader__body.less .dropCap {
   float: left;
   font-size: 2.6em;
   line-height: 1em;
@@ -15702,7 +15702,7 @@ select.live__sort:focus {
 
    .infoSection .infoDesc {
       width: 60%;
-      font-size: 3.5em;
+      font-size: 2.7em;
    }
 
    .reader__wrap.upsize {
