@@ -15650,7 +15650,7 @@ select.live__sort:focus {
       width: 325px;
       height: 52px;
       border-radius: 4px;
-      background: red;
+      background: blue;
    }
 
    .settings__modal__nav div {
