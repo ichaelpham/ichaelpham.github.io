@@ -82,6 +82,7 @@ $(document).ready(function() {
       $('.reader__container').toggleClass('open');
       $('.topPage').toggleClass('open');
       $('.reader__wrap').toggleClass('open');
+      $('.reader__comments').toggleClass('open');
       checkNight();
       $('html body').toggleClass('noscroll');
       /* scrollProgress(); */
@@ -324,7 +325,7 @@ $(document).ready(function() {
          return false;
       });
 
-      /** timeout function **/
+      /** timeout function
       var timeout = null;
       $(document).on('mousemove', function() {
          clearTimeout(timeout);
@@ -332,7 +333,9 @@ $(document).ready(function() {
             console.log('Mouse idle for 5 minutes');
             location.reload(true);
       }, 300000);
-});
+      Change this to if readerbody open
+      });
+      **/
 
 /** End of function **/
 });

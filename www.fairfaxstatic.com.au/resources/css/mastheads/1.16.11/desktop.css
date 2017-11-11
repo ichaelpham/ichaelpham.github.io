@@ -23,6 +23,17 @@
        url('../../../fonts/neuzeit-book.ttf')  format('truetype');
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/** Reader Nav Settings **/
+html body.noscroll {
+   overflow-y: hidden;
+}
+
 .loader {
    top: 0;
    left: 0;
@@ -48,15 +59,9 @@
    transition: top 0.5s;
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-/** Reader Nav Settings **/
-html body.noscroll {
-   overflow-y: hidden;
+body::-webkit-scrollbar-thumb {
+  background-color: #E5E5E5;
+  border-radius: 999px;
 }
 
 /** survey **/
@@ -394,13 +399,11 @@ html body.noscroll {
    z-index: 200;
    left: 0;
    top: 0;
-   background: white;
    font-family: 'Neuzeit', Arial, Helvetica, sans-serif;
 }
 
 .reader__container.serif {
    font-family: 'PT Serif', georgia, serif;
-   /* REVIEW:  */
 }
 
 .reader__wrap {
@@ -411,13 +414,14 @@ html body.noscroll {
    display: block;
    padding-left: 12vw;
    padding-right: 12vw;
-   width: 70%;
+   width: 73%;
    margin: 0 auto;
    font-size: 1.15em;
    line-height: 1.6;
    color: #233F34;
    font-family: 'Neuzeit book', Arial, Helvetica, sans-serif;
    top: 0;
+   background: white;
 }
 
 .reader__wrap.open p:focus {
@@ -555,6 +559,7 @@ html body.noscroll {
 .readerQuote {
    border-left: 5px solid #233F34;
    padding: 0 1.5em;
+   font-weight: bold;
 }
 
 .subBox {
@@ -802,18 +807,17 @@ html body.noscroll {
    display: inline-block;
    height: 88px;
    width: 100%;
-   background: #233F34;
    bottom: 0;
    left: 50%;
    cursor: pointer;
    transition: transform 0.5s;
+   border-top: 1px solid rgba(35,63,52,0.1);
 }
-
 
 .topPage p {
    display: block;
    width: 88px;
-   color: white;
+   color: #233F34;
    text-align: center;
    margin: 0 auto;
    font-size: 1.5em;
@@ -826,53 +830,35 @@ html body.noscroll {
    transition: transform 0.5s;
 }
 
-.marquee{
-   text-align: center;
-   padding: 20px;
-   margin: auto;
-   position: relative;
-   overflow: hidden;
-   background: white;
-   height: 88px;
-   max-width: 100%;
-   z-index: 999;
-}
-
-.marquee ul li{
-   bottom: 0;
-   left: 0;
-   position: fixed;
-   line-height: 88px;
-   list-style: none;
-   color: #233F34;
-   font-size: 1.15em;
-   font-family: 'Neuzeit Book', Arial, Helvetica, sans-serif;
-}
-
 /** Night Mode **/
 .reader__container.open.nightowl .reader__body,
 .reader__container.open.nightowl .name::after,
 .reader__comments.nightowl,
-.reader__comments__list.nightowl {
+.reader__comments__list.nightowl,
+.reader__container.open.nightowl .topPage p {
    color: white;
 }
 
 .reader__container.nightowl .valList span {
+   /* REVIEW: change bg color maybe */
    background: #557166;
    color: #233F34;
 }
+
+.settings__modal__nav.open.nightowl {
+   border-bottom: 1px solid rgba(255,255,255,0.1);
+   }
 
 .settings__modal__nav.open.nightowl,
 .settings__modal__nav.open.nightowl .logoNew p,
 .settings__modal__nav.open.nightowl .st0,
 .settings__modal__nav.open.nightowl .aboutOuter{
    background: #233F34;
-   border-bottom: rgba(255,255,255,0.1);
    fill: white;
    color: white;
 }
 
-.reader__container.nightowl {
+.reader__container.nightowl, .reader__container.nightowl .topPage {
    background: #233F34;
 }
 
@@ -904,7 +890,7 @@ html body.noscroll {
 }
 
 .topPage.open.nightowl {
-   border-top: 1px solid white;
+   border-top: 1px solid rgba(255,255,255,0.1);
 }
 
 /** mozart / serif mode **/
@@ -929,7 +915,6 @@ html body.noscroll {
    filter: grayscale(0);
    transition: all 0.5s;
 }
-
 
 #vital {
    display: none;
@@ -959,16 +944,14 @@ html body.noscroll {
 }
 
 .reader__body.less .dropCap {
-  float: left;
-  font-size: 2.6em;
-  line-height: 1em;
-  padding-right: 0.4em;
-  padding-top: 0.15em;
-  padding-left: 0.15em;
-  /** add more stuff for css **/
+   float: left;
+   font-size: 2.6em;
+   line-height: 1em;
+   padding-right: 0.4em;
+   padding-top: 0.1em;
+   padding-left: 0.15em;
 }
 
-/** do more for images **/
 .main-frame-error,
 .is_fm-mymasthead-favourite,
 .article__reprints,
@@ -15646,6 +15629,13 @@ select.live__sort:focus {
 }
 
 @media screen and (min-width: 1400px) {
+
+   /* REVIEW: this on iMac */
+   .temp {
+      zoom: 1.5;
+   }
+
+
    .settings__modal__nav {
       margin-left: -225px;
       width: 450px;
@@ -15662,7 +15652,7 @@ select.live__sort:focus {
    }
 
    .helper {
-      width: 30px;
+      width: 36px;
    }
 
    .question__heading {
@@ -15697,16 +15687,16 @@ select.live__sort:focus {
 
    .reader__wrap.open {
       font-size: 1.65em;
-      width: 55%;
+      width: 60%;
    }
 
    .infoSection .infoDesc {
-      font-size: 1.8em;
+      font-size: 2.16em;
    }
 
    .reader__wrap.upsize {
       font-size: 2.16em;
-      width: 65%;
+      width: 68%;
    }
 
    .reader__body.upsize .dropCap {
