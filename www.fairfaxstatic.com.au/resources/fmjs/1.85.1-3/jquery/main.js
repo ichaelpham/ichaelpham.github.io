@@ -325,17 +325,21 @@ $(document).ready(function() {
          return false;
       });
 
-      /** timeout function
+      /** timeout function **/
       var timeout = null;
+
       $(document).on('mousemove', function() {
-         clearTimeout(timeout);
-         timeout = setTimeout(function() {
-            console.log('Mouse idle for 5 minutes');
-            location.reload(true);
-      }, 300000);
-      Change this to if readerbody open
+         if ($('.reader__container').hasClass('open') | $('.modal__wrapper').hasClass('open')) {
+            clearTimeout(timeout);
+            timeout = setTimeout(function() {
+               console.log('Mouse idle for 5 minutes');
+               alert('idle');
+               location.reload(true);
+         }, 300000);
+      }  else {
+         return false;
+      }
       });
-      **/
 
 /** End of function **/
 });
