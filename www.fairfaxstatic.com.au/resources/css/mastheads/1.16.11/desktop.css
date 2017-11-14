@@ -421,7 +421,6 @@ body::-webkit-scrollbar-thumb {
    color: #233F34;
    font-family: 'Neuzeit book', Arial, Helvetica, sans-serif;
    top: 0;
-   background: white;
 }
 
 .reader__wrap.open p:focus {
@@ -840,7 +839,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .reader__container.nightowl .valList span {
-   /* REVIEW: change bg color maybe */
    background: #557166;
    color: #233F34;
 }
