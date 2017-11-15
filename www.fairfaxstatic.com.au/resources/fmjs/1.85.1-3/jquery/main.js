@@ -161,19 +161,6 @@ $(document).ready(function() {
       removeAll();
    });
 
-   /** Skip **/
-   $('.skip').click(function() {
-    if (positionQuestion < maxQuestions) {
-       positionQuestion++;
-       $('.question').hide();
-       $('#q' + positionQuestion).css("display","flex").show();
-    } else {
-       positionQuestion = 1;
-       classSwitch__reader();
-       checkScroll();
-    }
-   });
-
    /** radio input value becomes class name **/
    $(".question input").click(function() {
          var val = $('input[name=survey]:checked').val();
