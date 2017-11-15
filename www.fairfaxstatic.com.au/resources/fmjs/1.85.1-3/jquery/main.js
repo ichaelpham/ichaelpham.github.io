@@ -41,6 +41,22 @@ $(document).ready(function() {
       return false;
    });
 
+   $("a[href*='facebook']").on('click', function(e) {
+      e.preventDefault();
+      return false;
+   });
+
+   $("a[href*='twitter']").on('click', function(e) {
+      e.preventDefault();
+      return false;
+   });
+
+   $("a[href*='google']").on('click', function(e) {
+      e.preventDefault();
+      return false;
+   });
+
+
    /*
    function scrollProgress() {
       var winHeight = $('.progWindow').height(),

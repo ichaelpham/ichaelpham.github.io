@@ -14,7 +14,6 @@
 **/
 
 /** Typefaces **/
-@import url('https://fonts.googleapis.com/css?family=Pt+Serif:400,700');
 @font-face {
   font-family: 'Neuzeit book';
   src: url('../../../fonts/neuzeit-book.eot.eot');
@@ -22,6 +21,8 @@
        url('../../../fonts/neuzeit-book.woff') format('woff'),
        url('../../../fonts/neuzeit-book.ttf')  format('truetype');
 }
+
+@import url('https://fonts.googleapis.com/css?family=Pt+Serif:400,700');
 
 * {
     -webkit-box-sizing: border-box;
@@ -1071,14 +1072,13 @@ body::-webkit-scrollbar-thumb {
 .article__save,
 .action-group,
 .social--horizontal,
-.panel--follow,
+
 .is_fm-socialSharing,
 .nav__toggle,
 .nav__toggle::before,
 .nav__toggle::after,
 .rss-feed-widget,
 .most-read,
-.panel--popular,
 .ad-wrapper,
 .subscribe,
 .panel--related,
@@ -1086,8 +1086,8 @@ body::-webkit-scrollbar-thumb {
 .footer__bottom .btn,
 .grid>.grid,
 #navigation-toggle,
-.panel .panel--video-playlist,
-.aside--main {
+.panel .panel--video-playlist
+ {
    display: none !important;
 }
 
@@ -1095,7 +1095,10 @@ label::before {
    display: none !important;
 }
 
-a[href*='theage'], a[href*='fairfax'] {
+a[href*='theage'], a[href*='fairfax']
+a[href*='facebook'], a[href*='twitter'],
+a[href*='membercentre.fairfax'],
+a[href*='politics.fairfax'] {
    text-decoration: none !important;
    color: inherit !important;
    pointer-events: none !important;
