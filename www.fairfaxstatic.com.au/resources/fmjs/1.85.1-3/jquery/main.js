@@ -333,7 +333,6 @@ $(document).ready(function() {
             clearTimeout(timeout);
             timeout = setTimeout(function() {
                console.log('Mouse idle for 5 minutes');
-               alert('idle');
                location.reload(true);
          }, 300000);
       }  else {
