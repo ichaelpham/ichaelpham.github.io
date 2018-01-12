@@ -1,0 +1,190 @@
+/* Hacks */
+ul {
+  list-style: none;
+}
+
+hr {
+  margin: 0;
+}
+
+body, h1 {
+  font-weight: 300;
+}
+
+.btn {
+  padding: 16px 48px;
+  border-radius: 0;
+  border: 1px solid rgb(200,200,200);
+  color: rgb(75,75,75);
+}
+
+.btn:hover {
+  /* REVIEW:  */
+}
+
+/* Navbar */
+#home-navbar {
+  border-radius: 0;
+  background: transparent;
+}
+
+#home-navbar-brand,
+#home-navbar .navbar-nav > li > a {
+    color: white;
+}
+
+.navbar .navbar-brand:hover,
+.navbar .navbar-nav > li > a:hover,
+.navbar .navbar-nav > li > a:focus {
+    /* REVIEW: change this */
+}
+
+/* Hamburger */
+.navbar-toggler {
+    padding: 4px 0;
+    margin-top: 0.25rem;
+    height: 30px;
+    width: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.home-hamburger-icon {
+  width: 100%;
+  height: 2px;
+  display: block;
+  background-color: white;
+}
+
+.hamburger-icon {
+  width: 100%;
+  height: 2px;
+  display: block;
+  background-color: rgb(75,75,75);
+}
+
+.hamburger-icon.open:nth-child(odd) {
+  opacity: 0;
+  /* REVIEW: add transition */
+}
+
+/* Hero Image */
+.jumbotron {
+  border-radius: 0;
+  color: rgb(75,75,75);
+  margin-bottom: 0;
+  background: transparent;
+}
+
+.jumbotron > .container {
+  width: 60%;
+}
+
+.jumbotron-display {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.3em;
+  margin-bottom: 1em;
+  letter-spacing: 0.01em;
+}
+
+.home-header {
+  background-image:
+    linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ), url("../images/seating-hero.jpg");
+    height: 100vh;
+    color: white;
+}
+
+.header-display {
+  margin-bottom: 1em;
+  line-height: 1.3em;
+  letter-spacing: 0.01em;
+}
+
+.arrow-wrap {
+  border: 1px solid white;
+  width: 60px;
+  height: 60px;
+}
+
+.arrow {
+	width: 12px;
+  fill: white;
+}
+
+/* Sections */
+.section {
+  padding: 90px;
+}
+
+.section-display {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  line-height: 1.3em;
+  letter-spacing: 0.01em;
+}
+
+.service-box .subhead {
+  margin-top: 1em;
+  font-weight: 500;
+}
+
+.service-box .invisible {
+  display: inline-block;
+  margin-top: 1em;
+  border-bottom: 3px solid rgba(225,225,225,0);
+  padding-bottom: 2px;
+}
+
+.service-box .action {
+  position: absolute;
+  bottom: 0;
+}
+
+.action {
+  display: inline-block;
+  margin-top: 1em;
+  border-bottom: 3px solid rgb(225,225,225);
+  padding-bottom: 2px;
+  color: rgb(75,75,75);
+}
+
+.action:hover {
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  color: rgb(75,75,75);
+  /* REVIEW:  */
+}
+
+.footer {
+  padding: 30px;
+}
+
+.footer p,
+.footer a,
+.footer ul {
+  margin-bottom: 0;
+  padding-left: 0;
+  color: rgb(75,75,75);
+}
+
+.footer ul a {
+  display: inline-block;
+  height: auto;
+}
+
+.footer .social-icon {
+  vertical-align: sub;
+  width: 20px;
+  height: auto;
+  margin-left: .5rem;
+}
+
+.icon-fill {
+  fill: rgb(75,75,75);
+}
