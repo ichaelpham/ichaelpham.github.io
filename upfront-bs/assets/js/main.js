@@ -1,30 +1,28 @@
 $(document).ready(function(){
+
 	$(window).on("scroll",function(){
   	var ws = $(window).scrollTop();
-    var wh = $(window).height()
-    if(ws > wh){
-    	$("#home-navbar").css("box-shadow","0 1px 2px 0 rgba(225,225,225,1)");
-      $("#home-navbar").css("background","white");
-      $("#home-navbar-brand,#home-navbar .navbar-nav > li > a").css("color","rgb(75,75,75)");
+      if(ws > 0 || $(".navbar").hasClass('open')) {
+        $(".navbar").removeAttr('id', 'home-navbar');
+    } else if ($(".navbar").hasClass('home-navbar')) {
+        $(".navbar").attr('id', 'home-navbar');
     }
-    else{
-    	$("#home-navbar").css("box-shadow","0 1px 2px 0 rgba(225,225,225,0)");
-      $("#home-navbar").css("background","transparent");
-      $("#home-navbar-brand,#home-navbar .navbar-nav > li > a").css("color","white");
+    else {
     }
   });
 
   $(".navbar-toggler").on("click",function(){
+      $(".navbar").removeAttr('id', 'home-navbar');
+      $(".navbar").toggleClass('open');
       $(".hamburger-icon").toggleClass('open');
-      // REVIEW:
   })
 
-  $("h1,h2,h3,h4,h5,h6").each(function(i,e) {
-    var text = $(e).html();
-    text = text.split(' ');
-    var lastWord = text.pop();
-    text = text.join(' ') + "&nbsp;" + lastWord;
-    $(e).html(text);
-  });
+  $(".section-display, .subhead, .dropdown-item").html(function(){
 
+  var text= $(this).text().split(" ");
+  var last = text.pop();
+
+  return text.join(" ") + (text.length > 0 ? "&nbsp;" + last : last);
+
+});
 });
