@@ -15,14 +15,37 @@ $(document).ready(function(){
       $(".navbar").removeAttr('id', 'home-navbar');
       $(".navbar").toggleClass('open');
       $(".hamburger-icon").toggleClass('open');
-  })
+  });
 
-  $(".section-display, .subhead, .dropdown-item").html(function(){
+  $(".jumbotron-display, .section-display, .subhead, .dropdown-item").html(function(){
+	  var text= $(this).text().split(" ");
+	  var last = text.pop();
+	  return text.join(" ") + (text.length > 0 ? "&nbsp;" + last : last);
+	});
 
-  var text= $(this).text().split(" ");
-  var last = text.pop();
+	$(".story-action").click(function () {
+		var collapse = $(this).prev();
 
-  return text.join(" ") + (text.length > 0 ? "&nbsp;" + last : last);
+		$(collapse).slideToggle(350);
+			event.preventDefault();
+			event.stopPropagation();
 
-});
+			$($(this)).toggleClass('open');
+
+				if ($(".story-action").hasClass('open')) {
+					$($(this)).text('Read Less');
+			} else {
+				$($(this)).text('Read More');
+			};
+	});
+
+	$(".dropdown-toggle").click(function () {
+		$($(".dropdown-toggle")).toggleClass('open');
+	});
+
+	$(".back-to-top").click(function () {
+	  $("html, body").animate({scrollTop: 0}, 500);
+	});
+
+
 });
